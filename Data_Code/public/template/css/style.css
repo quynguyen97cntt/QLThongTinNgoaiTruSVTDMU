@@ -1,0 +1,100 @@
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.bg-transparent{
+    background-color: rgba(250, 250, 255, 0.7) !important;
+
+}
+
+.separate {
+  border: 1px solid rgb(200, 203, 207);
+}
+
+.bg-blue {
+  background-color: #0D8DD8;
+}
+
+@media screen and (max-width: 800px) {
+  .m-top-ward{
+    margin-top: 1em;
+  }
+  .jumbotron{
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    box-shadow: -5px 3px 46px -11px rgba(172,168,181,1);
+  }
+
+}
+.navbar-nav .navbar-text{
+  text-transform: uppercase ;
+}
+
+.navbar-custom ul li a:hover{
+  background-color:  rgb(151, 166, 255);
+  color:#fff !important;
+  transition: ease-in-out 0.5s;
+  border-radius: 5px;
+  padding: 1;
+
+}
+
+.text-label{
+  color: #000;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  padding-bottom: 3rem;
+  box-shadow: -5px 3px 46px -11px rgba(172,168,181,1);
+}
+
+.bg-nav-blue{
+  background-color: #449074;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 2s ease;
+}
+
+.sticky + .content {
+  padding-top: 300px;
+}
+
+.pt-6{
+  padding-top: 6em !important;
+}
+
+.mt-6{
+  padding-top: 4em !important;
+}
+
+.navbar-trans {transition: all 2s ease;}
+
+.bg-image-post{
+    background-image: url("https://lh3.googleusercontent.com/rWXQ6HK1VBwAw3MFnP-LkiATu-uIkKfiIjSek1maTUktlrumfqVhhEt5336KpPBbYqqjwhmW_aSeYvXi_a0_520FEIDn1myjbN8LIjLgHppFUzlAggm3mRi_8QDH89nmzROkitybEFoVIc6tsJKm2fwiKa57SNrNvSbWRWquAEEF7FLMuAwitQTM2HzfOuWmSRSWgqns4EJ78RKo6Eqx_uWafhAGfiNLRcWjOS0TPGCGdjCme0yasHxW9h-MWSlvYROrZIKr4i9Qt9OA1u8rDzjT1idmjjPRfX5yfSqPUOBV0EgP4luiMZxBk22KgLopl4KG-8M1Aqcs8FdPWzIO--VXUlxz-tME3eT5Hp9k4Wru3Kb-OWseyewLLvYzX1MOzjHA2htoP9dJzoNmiNZ57o4B_VPv4oVPeTCdwrZ2tVXeG5N_5fPO-9xHaBB6iNqVATi2a9AKKHq0VVm9g5iQIqo4ycYia1Nt653ZckuLlSrNpSAW9OOExhoJjbs3x2GkRvSNkeNpwOa0cpLbCEuvdMpw-brStVMrorEw376fgdz_yowVpKwt3bmgV3B_8wT90wiJGqZQaSt5Fq7mTvZAD4swYYubrnsZFLp-pFNXJ3r7nz4LjewgSwwE5yIASXiLAZy31Q9kPRD9Fi0pHr-YECaiC0ePuY-97Iwyv3m2ME-2iQhMbEc5tA=w940-h650-no");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mt-12{
+    padding-top: 12em !important;
+}
+
+
+@media screen and (max-width: 800px) {
+  .bg-nav-blue{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #449074;
+  }
+}
