@@ -590,6 +590,8 @@ COPY public.anhbaiviet (id, name, mabaiviet) FROM stdin;
 90	5eccdc2e50569_img03.png	93
 91	5eccdc2ec5b4a_img04.png	93
 92	5eccdc2ed9e99_img05.png	93
+93	5f0c7eaf07494_hinh1.jpg	94
+94	5f0c7eaf2247d_hinh2.jpg	94
 \.
 
 
@@ -611,6 +613,7 @@ COPY public.baiviet (id, tieude, noidung, ngaytao, makhutro, trangthaiduyet, gia
 90	Phòng trọ cao cấp cho thuê gần ngay bệnh viện 512.	<p>ph&ograve;ng trọ cao cấp cho thu&ecirc;, tại đường Dx043,ngay khu vực y&ecirc;n tĩnh, an ninh,sạch sẽ.. c&oacute; đường ra v&agrave;o rộng r&atilde;i, giờ giấc thoải m&aacute;i, ph&ograve;ng rộng, l&oacute;t gạch cao sạch sẽ, c&oacute; tolet cao cấp, bếp, rửa.. G&aacute;c đ&uacute;c betong,c&acirc;u thang sắt... c&oacute; chỗ phơi đồ rộng..<br />\r\n+.Đang C&oacute; ph&ograve;ng trống nha ace ...<br />\r\nGi&aacute; :1t4 th&aacute;ng...<br />\r\n..Gặp c&ocirc; &Uacute;t chủ.</p>	2020-03-05	344122199	1	1400000	25741	0933804408	157, Đường DX 043||13722, Phường Hiệp Thành, Thành phố Thủ Dầu Một, Bình Dương	\N
 91	Phòng trọ 16m2 - 30m2 gần ĐH Thủ Dầu Một	<p>Phòng trọ 16m2 - 30m2, có cửa s&ocirc;̉, gác đúc &amp; n&ocirc;̣i th&acirc;́t cơ bản.<br />\r\n<br />\r\nX&acirc;y mới 100%, sạch sẽ, th&ocirc;ng thoáng.<br />\r\n<br />\r\nRamp d&ocirc;́c có th&ecirc;̉ chạy xe l&ecirc;n từng t&acirc;̀ng.<br />\r\n<br />\r\nS&acirc;n thượng 1000m2 r&ocirc;̣ng rãi, thoáng mát.<br />\r\n<br />\r\nCamera khắp hành lang, đảm bảo an ninh.<br />\r\n<br />\r\nSáng 5h mở c&ocirc;̉ng, t&ocirc;́i 23h đóng c&ocirc;̉ng.<br />\r\n<br />\r\nWifi mi&ecirc;̃n phí, đi&ecirc;̣n 3500, nước 5000.<br />\r\n<br />\r\nNgay trung t&acirc;m, thu&acirc;̣n ti&ecirc;̣n đi lại, nằm tr&ecirc;n mặt ti&ecirc;̀n đường L&ecirc; H&ocirc;̀ng Phong, s&ocirc;́ nhà 417, chỉ m&acirc;́t 5&#39; đ&ecirc;̉ đ&ecirc;́n chợ, trung t&acirc;m thương mại, rạp chi&ecirc;́u phim, b&ecirc;̣nh vi&ecirc;̣n, đại học Thủ D&acirc;̀u M&ocirc;̣t, đại học Bình Dương và các trường khác.<br />\r\n<br />\r\n1800k/tháng. Đặt cọc 1000k.</p>	2020-03-05	344122199	1	1800000	25750	0772983839	417, Đường Lê Hồng Phong, Phường Phú Hòa, Thành phố Thủ Dầu Một, Bình Dương	\N
 89	Cho thuê phòng trọ diện tích lớn	<p>Cho thu&ecirc; nh&agrave; trọ hẻm 1183 Đường L&ecirc; Hồng Phong, Thủ Dầu Một, BD.<br />\r\nph&ograve;ng trọ m&aacute;t mẻ, diện t&iacute;ch lớn 30m2 ( 2 ph&ograve;ng gộp 1). c&oacute; camera</p>	2020-03-05	344122199	1	1500000	25753	0963032139	1183, Đường Lê Hồng Phong, Phường Phú Thọ, Thành phố Thủ Dầu Một, Bình Dương	\N
+94	Nhà trọ giá xém rẻ	<p>Nh&agrave; trọ gi&aacute; x&eacute;m rẻ</p>	2020-07-13	918226916	1	1200000	25753	0333839298	39/102 Đường Trần Bình Trọng, Phường Phú Thọ, Thị Xã Thủ Dầu Một, Bình Dương	\N
 \.
 
 
@@ -1820,6 +1823,8 @@ KT3	0974727754	41/8A đường Lê Hồng Phong, Phường Phú Lợi, TP. Thủ
 
 COPY public.khutrodaxoa (id, makhutro, lydo, ngayxoa, nguoixoa) FROM stdin;
 6	937760429	Nhà trọ nằm ngoài khu vực Thủ Dầu Một	2020-07-03	CNTT043
+7	28108	Kiểm tra hệ thống	2020-07-12	CNTT043
+8	125	Kiểm tra hệ thống	2020-07-13	CNTT043
 \.
 
 
@@ -1831,6 +1836,7 @@ COPY public.lop (malop, tenlop, makhoa, hedaotao) FROM stdin;
 D16HT01	Hệ thống thông tin	KTCN	Chính qui
 D16PM01	Kỹ thuật phần mềm 01	KTCN	Chính qui
 D16PM02	Kỹ thuật phần mềm 02	KTCN	Chính qui
+D16HT02	Hệ thống thông tin 2	KTCN	Chính qui
 \.
 
 
@@ -1840,7 +1846,6 @@ D16PM02	Kỹ thuật phần mềm 02	KTCN	Chính qui
 
 COPY public.ngoaitru (mssv, tenchungoaitru, dienthoaichungoaitru, diachingoaitru, loaicutru, ngaydangky, vido, kinhdo, geom) FROM stdin;
 1624801030022	Trần Thanh Liêm	0918226916	424/39/01 Lê Hồng Phong, tổ 2, khu 4, Phường Phú Hòa, TP. Thủ Dầu Một, Tỉnh Bình Dương	1	2020-07-02	10.99121	106.676	0101000020E61000002506819543AB5A40B3EF8AE07FFB2540
-1624801040046	Nguyễn Thành Tâm	0333829875	47/1, Khu 4, Tân An, Thủ Dầu Một, Bình Dương	0	2020-07-02	11.027545909249072	106.6146755218506	0101000020E6100000010000D856A75A4009BA567F1A0E2640
 1624801040074	Chú Đức	0333238496	84/6 khu 2, phường phú hòa, tp.TDM	1	2020-06-07	10.975463873881955	106.67504400014879	0101000020E61000000100C0EB33AB5A404381390070F32540
 1624801040049	Chú Đức	0333238496	84/6 khu 2, phường phú hòa, tp.TDM	1	2020-06-07	10.975913812739046	106.67510569095613	0101000020E6100000010080EE34AB5A4095DBAAF9AAF32540
 \.
@@ -1856,6 +1861,7 @@ COPY public.otro (id, mssv, ngayden, ngaydi, sophong, makhutro) FROM stdin;
 60	1624801030029	2020-05-25	\N	1	918226916
 61	1624801030122	2020-05-25	\N	2	918226916
 62	1624801040059	2020-05-29	\N	7	344122199
+63	1624801040046	2020-07-13	\N	8	918226916
 \.
 
 
@@ -1895,114 +1901,114 @@ COPY public.quanhuyen (maqh, tenqh, matp) FROM stdin;
 --
 
 COPY public.sinhvien (mssv, ho, ten, ngaysinh, gioitinh, dienthoai, email, lop, cmnd, hokhau, tamtru, noisinh, hoten) FROM stdin;
-1624801040051	HUỲNH THANH	TÂM	1998-09-28	Nam	0923727741	thanhtam28ss@gmail.com	D16HT01	281108712	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	\N	\N
-1624801040052	TRẦN VĂN	TÂN	1998-03-13	Nam	0966375505	trantan598497@gmail.com	D16HT01	281108714	Thôn phú lợi, Xã Phú Riềng, Huyện Phú Riềng, Tỉnh Bình Phước 	\N	\N	\N
-1624801040059	ĐOÀN TRUNG	THÀNH	1998-07-06	Nam	01654510246	thanhmoc115@gmail.com	D16HT01	281108715	\N	\N	\N	\N
-1624801040060	NGUYỄN TẤN	THÀNH	1998-07-14	Nam	0937519106	tanthanhphuochoa@gmail.com	D16HT01	281108716	542/7, tổ 2, ấp 1B, xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương	\N	\N	\N
-1624801040061	TRỊNH TRỌNG	THÀNH	1998-06-27	Nam	1662733555	trongthanh20161998@gmail.com	D16HT01	281108717	số 66, đường Thích Quảng Đức, phường Phú Hòa, TP Thủ Dầu Một, Bình Dương	số 66, đường Thích Quảng Đức, phường Phú Hòa, TP Thủ Dầu Một, Bình Dương	\N	\N
-1624801040062	LA NGỌC PHÚ	THỊNH	1998-10-26	Nữ	01658046655	phuthinhla98@gmail.com	D16HT01	281108718	490 tổ 31 khu 3 đường CMT8 phường Hiệp Thành Tx. Thủ Dầu Một tỉnh Bình Dương	363 tổ 31 khu 3 đường CMT8 Phường Hiệp Thành Tp. Thủ Dầu Một, Bình Dương	\N	\N
-1624801040068	NGUYỄN QUỐC	TRUNG	1997-05-12	Nam	0912938394	t0912938394@gmail.com	D16HT01	281108727	\N	\N	\N	\N
-1624801040087	LÊ ANH	TUẤN	1997-05-19	Nam	0969277351	leanhtuan19597@gmail.com	D16HT01	281108733	xã Phú Thuận,Huyện Phú Tân,TP.Cà Mau	ấp cây sắn,xã Lai Uyên,Huyện Bàu Bàng,Bình Dương	\N	\N
-1624801030077	PHẠM MINH	PHÚC	1998-05-29	Nam	1882221110	mylove169295@gmail.com	D16PM02	2811086400	421, Lê Chí Dân, Khu phố 7 , Phương Tân An,Phường Tân An,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030081	LÝ ANH	QUÂN	1998-03-31	Nam	1214962589	lyanhquan20@gmail.com	D16PM02	2811086401	\N	\N	\N	\N
-1624801030082	VƯƠNG DĨ 	QUYỀN	1997-05-11	Nam	1656675417	quyenlegend2013@gmail.com	D16PM02	2811086402	\N	\N	\N	\N
-1624801030084	HOÀNG NGỌC PHƯỚC	SANG	1998-01-22	Nam	927261393	hoangs4ng@gmail.com	D16PM02	2811086403	\N	\N	\N	\N
-1624801030085	NGUYỄN NGỌC MINH	SANG	1998-07-16	Nam	926221113	ngocminhsang2016@gmail.com	D16PM02	2811086404	Số 495, đường Nguyễn Chí Thanh, khu 7,Phường Tương Bình Hiệp,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030086	NGUYỄN TRỌNG	SANG	1997-09-07	Nam	01689712323	trongsangnguyen1997@gmail.com	D16PM02	2811086405	\N	\N	\N	\N
-1624801030087	TRẦN THỊ	SÂM	1998-02-02	Nữ	1685477690	tranthisam2298@gmail,com	D16PM02	2811086406	\N	331/35/3 tổ 43 phường phú lợi,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030088	ĐINH TẤN	TÀI	1998-10-18	Nam	1867001663	dinhtantai1810@gmail.com	D16PM02	2811086407	\N	\N	\N	\N
-1624801030089	ĐOÀN TẤN	TÀI	1998-09-19	Nam	1694413777	doantantai1909@gmail.com	D16PM02	2811086408	\N	\N	\N	\N
-1624801030091	HỒ THỊ YẾN	TIÊN	1998-09-09	Nữ	1656767700	tientientien73@gmail.com	D16PM02	2811086409	\N	172/20 - tổ 8 - khu phố 5 - phường Phú Hòa - tp Thủ Dầu Một - Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030092	NGUYỄN THANH	TIỀN	1998-07-10	Nam	1234043547	nguyenthanhtien998@gmail.com	D16PM02	2811086410	\N	\N	\N	\N
-1624801030094	NGUYỄN VĂN	TOÀN	1998-09-27	Nam	1627580849	anhem4nguoi@gmail. com	D16PM02	2811086411	\N	\N	\N	\N
-1624801030097	NGUYỄN THANH	TÙNG	1998-03-29	Nam	974582675	29tung98@gmail.com	D16PM02	2811086412	\N	\N	\N	\N
-1624801030098	NGUYỄN HỮU	TƯỜNG	1998-09-16	Nam	1665931558	nht160998@gmail.com	D16PM02	2811086413	\N	\N	\N	\N
-1624801030099	NGUYỄN THU	THANH	1998-01-19	Nữ	0913189514	monmongon191@gmail.com	D16PM02	2811086414	\N	382/8 Phạm Ngũ Lão,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030103	NGUYỄN HỮU	THẮNG	1998-06-29	Nam	0968347546	huuthang296@gmail.com	D16PM02	2811086415	\N	331/18,tổ 44 khu 5, phường phú lợi, thành phố thủ dầu 1 bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030105	PHẠM NGUYỄN HỮU	THIỆN	1998-07-10	Nam	0146714040	bibi9768@gmail.com	D16PM02	2811086416	1011/4, khu 4, đường Lê Hồng Phong, phường Phú Thọ, thành phố Thủ Dầu Một, tỉnh Bình Dương,Phường Phú Thọ,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030108	LÊ THỊ THÙY	TRANG	1998-06-26	Nữ	1682223774	tinyle1708@gmail.com	D16PM02	2811086417	\N	\N	\N	\N
-1624801030110	VÕ MINH	TRÍ	1998-08-01	Nam	01887510441	nam0dong0co@gmail.com	D16PM02	2811086418	646, Nguyễn Tri Phương, khu 9,Phường Chánh Nghĩa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030111	NGUYỄN HÀ	TRIỀU	1998-06-17	Nam	\N	\N	D16PM02	2811086419	\N	\N	\N	\N
-1624801030113	NGUYỄN THỊ THANH	TRÚC	1998-03-04	Nữ	1658552999	trucnguyen431998@gmail.com	D16PM02	2811086420	34/16 khu phố Đông A, Đông Hòa - Dĩ An - Bình Dương ,Phường Đông Hòa,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	\N
-1624801030114	PHẠM VĂN	TRUNG	1998-08-27	Nam	969052509	trungpham.pt36@gmail.com	D16PM02	2811086421	\N	Phường phú lợi,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030115	TRẦN THÀNH	TRUNG	1997-12-16	Nam	1883181646	tranthanhtrung16121997@gmail.com	D16PM02	2811086422	68,DT744,ấp An Thành ,Xã An Tây,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	\N
-1624801030118	CAO KHẮC	VIỆT	1998-03-28	Nam	976124806	khacviet2803@gmail.com	D16PM02	2811086423	\N	\N	\N	\N
-1624801030119	NGUYỄN MINH	VƯƠNG	1998-11-27	Nam	\N	0	D16PM02	2811086424	\N	\N	\N	\N
-1624801030120	TRẦN PHƯƠNG	NAM	1998-08-23	Nam	0913390120	namem339@gmail.com	D16PM02	2811086425	\N	299 phú lợi khu phõ 4,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030121	PHẠM VĂN	PHỤNG	1998-01-16	Nam	01653439859	vanphung0198@gmail.com	D16PM02	2811086426	492,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030122	NGUYỄN HỮU	PHÚC	1998-01-26	Nam	0969482164	hanphuc1026@gmail.com	D16PM02	2811086427	\N	20/2 ,Phường Bình Hòa,Thị xã Thuận An,Tỉnh Bình Dương	\N	\N
-1624801030123	CHÂU QUỐC	TUẤN	1998-04-05	Nam	1632463311	chautuan5498@gmail.com	D16PM02	2811086428	\N	\N	\N	\N
-1424801030013	LƯƠNG QUANG	CƯƠNG	1996-02-10	Nam	01654201033	quangcuongnd29296@gmail.com	D16PM01	281108800	\N	\N	\N	\N
-1624801030001	TRẦN THẾ   AN	AN	1993-08-18	Nam	01632284499	tranthean23@gmail.com	D16PM01	281108801	72B/10 KP Đông Nhì, P. Lái Thiêu. Tx.Thuận An,tỉnh Bình Dương,Phường Lái Thiêu,Thị xã Thuận An,Tỉnh Bình Dương	\N	\N	\N
-1624801030002	NGUYỄN HOÀNG NAM	ANH	1998-10-31	Nam	01692255550	anhnguyen3198@gmail.com	D16PM01	281108802	\N	\N	\N	\N
-1624801030004	NGUYỄN HOÀI	ÂN	1998-05-17	Nam	01683367670	carlosking.vn@gmail.com	D16PM01	281108803	1516 khu 6 định hòa  thủ dầu một bình dương,Phường Định Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030005	NGUYỄN HOÀNG	ÂN	1997-05-15	Nam	0973192185	kishiz094@gmail.com	D16PM01	281108804	\N	424/61 Lê Hồng Phong, phường Phú Hòa, Thủ Dầu Một, Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030006	HÀ GIA   BẢO	BẢO	1998-09-26	Nam	0948866263	baobaovabao@gmail.com	D16PM01	281108805	\N	613/4 Tổ 83, Khu Phố 9, Phường Phú Lợi, Thủ Dầu Một, Bình Dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030009	NGUYỄN THANH	BÌNH	1998-09-14	Nam	01637297238	thanhbinh19998@gmail.com	D16PM01	281108806	số 186, khu 1, tổ 5, khu phố An Lợi, phường Hòa Lợi, thị xã Bến Cát, tình Bình Dương,Phường Hòa Lợi,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	\N
-1624801030010	NGUYỄN CHÍ	CƯỜNG	1998-03-23	Nam	01633734476	kibobao123@gmail.com	D16PM01	281108807	107/A Đoàn Thị Liên tổ 12 khu 2,TP Thủ Dầu Một,Tỉnh Bình Dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	\N
-1624801030012	TRẦN TIẾN	CƯỜNG	1998-12-20	Nam	0973558351	tincngtrn@gmail.com	D16PM01	281108808	55/8, Văn Công Khai, Khu 9, Tổ 60, Phường Phú Cường, TP Thủ Dầu Một,,,Tỉnh Bình Dương	\N	\N	\N
-1624801030013	NGUYỄN ĐÌNH	DŨNG	1997-02-17	Nam	\N	sahoang123456789@gmail.com	D16PM01	281108809	\N	\N	\N	\N
-1624801030021	NGUYỄN THÀNH	ĐẠT	1996-09-29	Nam	01648619252	datprono1001@gmail.com	D16PM01	281108810	\N	số nhà 77/5 khu phố tân phước thị xã Dĩ An tỉnh Bình Dương,Phường Tân Bình,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N
-1624801030022	NGÔ XUÂN	ĐĂNG	1998-11-20	Nam	01663034356	xuadang98@gmail.com	D16PM01	281108811	\N	\N	\N	\N
-1624801030023	NGUYỄN KHẮC	ĐĂNG	1996-09-07	Nam	01646172777	khacdang07091996@gmail.com	D16PM01	281108812	40/6 Trung Thắng, Bình Thắng, Dĩ An, Bình Dương.,Ngoài tỉnh,,Tỉnh Bình Dương	\N	\N	\N
-1624801030027	TRẦN MINH	HẢI	1998-01-22	Nam	01667167112	kumanypo@gmail.com	D16PM01	281108813	\N	453/53- tổ8-kp8-p.phú hòa-bd,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030029	LÊ TRỌNG	HẬU	1998-12-23	Nam	01645667509	lehausk@gmail.com	D16PM01	281108814	842/31/2/3 đường nguyễn thị minh khai, kp. tân thắng, p. tân bình, tx. dĩ an, tỉnh bình dương,Phường Tân Bình,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	\N
-1624801030031	VÕ VĂN	HIỆP	1997-08-28	Nam	0977708610	vovanhiepqb@gmail.com	D16PM01	281108815	\N	63/10, tổ 2, khu phố 6,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030032	LÊ TRUNG	HIẾU	1997-10-19	Nam	01638006997	letrunghieu1921997@gmail.com	D16PM01	281108816	\N	17/2 huỳnh văn nghệ , khu phố bốn , phường phú lợi , tp thủ dầu một, tỉnh bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030033	NGUYỄN THANH	HIẾU	1998-01-06	Nam	01647394677	hieunguyen1998nhoem@gmail.com	D16PM01	281108817	\N	51 ,khu3 ,huỳnh văn lũy ,phường phú lợi ,thủ dầu một ,bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030035	TRẦN TRUNG	HIẾU	1998-01-18	Nam	0941451282	tthieu10a13@gmail.com	D16PM01	281108818	\N	424/44/29,Lê Hồng Phong,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030038	LƯƠNG MINH	HOÀ	1998-12-23	Nam	\N	luonghoa322@gmail.com	D16PM01	281108819	\N	82 , khu phố 4,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030045	NGUYỄN QUANG	HUY	1998-08-08	Nam	\N	huynguyen080898@gmail.com	D16PM01	281108820	\N	42 Trần Văn Ơn, Tổ 5, Khu Phố 7,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030046	VÕ GIA	HUY	1997-11-24	Nam	\N	huygalam057@gmail.com	D16PM01	281108821	\N	\N	\N	\N
-1624801030050	ĐỖ THỊ	HƯƠNG	1998-08-20	Nữ	01637008027	khietnhi0310@gmail.com	D16PM01	281108822	185/43 Trần Hưng Đạo, Khu phố Tây A,Phường Dĩ An,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	\N
-1624801030052	NGUYỄN VƯƠNG DUY	KHANG	1998-12-17	Nam	0914544737	taikhoanlaj@gmail.com	D16PM01	281108823	74,tổ 3 -khu phố khánh hội -thị trấn tân phước khánh-huyện tân uyên -tỉnh Bình Dương,Phường Tân Phước Khánh,Thị xã Tân Uyên,Tỉnh Bình Dương	\N	\N	\N
-1624801030055	NGUYỄN QUANG	LINH	1998-12-25	Nam	01672325249	linhnguyen1998125@gmail.com	D16PM01	281108824	\N	63/6  đường 30/4  khu 6. Phường.Phú hòa tp TDM Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030059	NGUYỄN TẤN	LỘC	1998-07-05	Nam	01645303311	locn049@gmail.com	D16PM01	281108825	số 25 , tổ 1,ấp kiến an,Xã An Điền,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	\N
-1624801030061	PHẠM TRÍ	LỰC	1998-08-06	Nam	01637258800	trilucp8@gmail.com	D16PM01	281108826	\N	172/27 tổ 10 khu phố 5, đường Phú Lợi, phường Phú Hòa, thành phố Thủ Dầu Một, tỉnh Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030063	TỪ THIỆN BẢO	MINH	1998-03-20	Nam	0966075663	vcb000111@gmail.com	D16PM01	281108827	\N	số nhà 82, khu phố 4, Phú Hoà, TDM, BD,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030064	HÀ NHỰT	NAM	1998-10-06	Nam	01236978290	hanhutnam@gmail.com	D16PM01	281108828	\N	\N	\N	\N
-1624801030066	TRẦN ĐỨC	NGHĨA	1998-04-18	Nam	01695054584	trannampkpk@gmail.com	D16PM01	281108829	\N	48/135 khu 8 tổ 114 phường Hiệp Thành. TP Thủ Dầu Một, Tỉnh Bình Dương,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030069	LÝ QUANG	NGHĨA	1998-03-27	Nam	\N	nghiatrung01.nl@gmail.com	D16PM01	281108830	\N	24 Lê Thị Trung,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030071	LÊ XUÂN	NHẬT	1998-11-11	Nam	0967324471	nhata8.tn1@gmail.com	D16PM01	281108831	\N	Số 24 Lê Thị Trung ,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030072	TRẦN THỊ HUỲNH	NHƯ	1998-11-05	Nữ	01699686262	huynhnhutran114@gmail.com	D16PM01	281108832	\N	Tổ 39, Khu phố Chiêu Liêu, Phường Tân Đông Hiệp, Tx Dĩ An, Tỉnh Bình Dương,Phường Tân Đông Hiệp,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N
-1624801030144	MAI HUY	HOÀNG	1998-06-18	Nam	01652212199	sasukezentatsu@gmail.com	D16PM01	281108833	\N	số nhà 29 khu 4 đường N2 phường phú hòa thành phố thủ dầu một bình dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030146	NGUYỄN BÁ	TÚ	1997-03-17	Nam	0965076770	nbt17397@gmail.com	D16PM01	281108834	\N	\N	\N	\N
-1624801030124	TRỊNH XUÂN	ĐỨC	1997-08-17	Nam	0967084484	trinhxuanduc997@gmail.com	D16PM02	2811086429	\N	48/135 Đ. hoàng hoa thám, tổ 114, khu 8, P. hiệp thành,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030125	NGUYỄN VĨNH	TOÀN	1998-02-06	Nam	1676696642	tn819936@gmail.com	D16PM02	2811086430	\N	\N	\N	\N
-1624801030126	TRẦN HỒNG	KHÁNH	1998-02-11	Nam	0973344774	khimoc9a1@gmail.com	D16PM02	2811086431	\N	65A/2 ĐT743, khu phố 1B,Phường An Phú,Thị xã Thuận An,Tỉnh Bình Dương	\N	\N
-1624801040003	VÕ QUỐC	BẢO	1998-02-11	Nam	0978168639	quocbao3398@gmail.com	D16HT01	281108680	12 C khu phố Thạnh Qúy phường An Thạnh thị xã Thuận An tỉnh Bình Dương	12 C khu phố Thạnh Qúy phường An Thạnh thị xã Thuận An tỉnh Bình Dương	\N	\N
-1624801040004	NGÔ BÁ	CƯỜNG	1998-09-06	Nam	01626839977	ngobacuong2016@gmail.com	D16HT01	281108681	Xã An Đổ Huyện Bình Lục Tỉnh Hà Nam	251BPhường Bình Thung khu Phố Bình An Thị Xã Dĩ An Tỉnh Bình Dương	\N	\N
-1624801040010	NGUYỄN BÁ	ĐẠT	1998-06-15	Nam	01696901996	badatdp69@gmail.com	D16HT01	281108682	Tổ dân Phố 3 - Huyện Đức Phổ - Tỉnh Quảng Ngãi	48/60 Hoàng Hoa Thám - TDM - Bình Dương	\N	\N
-1624801040012	TRẦN PHƯỚC	ĐỨC	1998-08-08	Nam	1657950246	tranphuocduc1998@gmail.com	D16HT01	281108685	99, ĐT 741, Ấp Vĩnh An, Xã Vĩnh Hòa, Huyện Phú Giáo, Bình Dương	395/85, khu phố 8, phường Phú Hòa, Thủ Dầu Một, Bình Dương	\N	\N
-1624801040005	NGUYỄN THỊ THÙY	DUNG	1998-09-01	Nữ	0911559980	thuydungtk98@gmail.com	D16HT01	281108686	247 Tổ 1 , Ấp 5 - Thiện Hưng - Bù Đốp - Bình Phước	188 Khu 8 Trần Văn Ơn - Phú Hòa - TDM - Bình Dương	\N	\N
-1624801040077	CHÂU ĐẠI	DƯƠNG	1998-07-06	Nam	1688566726	chaudaiduong98@gmail.com	D16HT01	281108687	Thôn Hiệp Cường, xã Tân Tiến, Thị xã Lagi, Bình Thuận	48/60 Hoàng Hoa Thám, phường Phú Hòa, Thủ Dầu Một, Bình Dương	\N	\N
-1624801040014	TRẦN VĂN	GIÀU	1998-01-09	Nam	0967726553	tranvangiaud16ht01@gmail.com	D16HT01	281108688	107 ấp Lai Khê, xã Lai Hưng, huyện Bàu Bàng, tỉnh Bình Dương	\N	\N	\N
-1424801040093	TRẦN CÔNG	HẬU	1996-03-30	Nam	0924077882	conghau3003@gmail.com	D16HT01	281108691	2/9 P Bình Nhâm, Tx Thuận An, BD	2/9 P Bình Nhâm, Tx Thuận An, BD	\N	\N
-1624801040019	NGUYỄN VĂN	HIỆP	1998-04-03	Nam	0985007100	vanhiep1998@gmail.com	D16HT01	281108692	77, Dx112, Kp8, P.Tân An, Tp.Thủ Dầu Một, tỉnh Bình Dương	77, Dx112, Kp8, P.Tân An, Tp.Thủ Dầu Một, tỉnh Bình Dương	\N	\N
-1624801040020	PHẠM TRUNG	HIẾU	1998-10-01	Nam	1663073789	phamhieu5969@gmail.com	D16HT01	281108693	6/14, Khu Phố 4B , Thị Trấn Dầu Tiếng, H.Dầu Tiếng, Tỉnh Bình Dương	136/19 Tổ 5 . Khu Phố 8. Phường Phú Hòa. Tp Thủ Dầu Một, tỉnh Bình Dương	\N	\N
-1624801040027	HUỲNH DUY	KHÁNH	1998-09-22	Nam	944028362	duykhanh220998@gmail.com	D16HT01	281108696	983/2/8/1  tổ 73 khu 9 phuòng hiệp an tp.tdm bd	983/2/8/1  tổ 73 khu 9 phuòng hiệp an tp.tdm bd	\N	\N
-1624801040030	TRIỆU PHƯỚC	LỘC	1998-06-03	Nam	0971500580	trieuphuocloccoder@gmail.com	D16HT01	281108697	thôn 4, xã Đắk-Ơ, huyện Bù Gia Mập, tỉnh Bình Phước	244/37/23, tổ 8, khu 5, phường Phú Hòa, tp Thủ Dầu Một, tỉnh Bình Dương	\N	\N
-1524801040079	NGUYỄN TẤN	LỢI	1997-03-17	Nam	01277252477	tanloi.bdp@gmail.com	D16HT01	281108698	Tổ 9, KP4, phường Thới Hòa, Bến Cát, Bình Dương	Tổ 9, KP4, phường Thới Hòa, Bến Cát, Bình Dương	\N	\N
-1624801040076	NGUYỄN THỊ TRÀ	MY	1998-03-12	Nữ	0976984828	Ngthitramy92@gmail.com	D16HT01	281108699	D3/063, Ấp Lê Lợi 2, Xã Quang Trung, Huyện Thống Nhất, Tỉnh Đồng Nai	288/11/4, Huỳnh Văn Lũy, Thủ Dầu Một, Bình Dương	\N	\N
-1624801040032	LÊ VĂN	NAM	1997-04-10	Nam	01644023451	levannamtdmu@gmail.com	D16HT01	281108700	KP3, phường Tân Định, Bến Cát, Bình Dương	KP3, phường Tân Định, Bến Cát, Bình Dương	\N	\N
-1624801040033	TRỊNH THỊ THÚY	NGA	1998-08-30	Nữ	01674137141	thuynga30898@gmail.com	D16HT01	281108701	ấp Lai Khê, xã Lai Hưng, huyện  Bàu Bàng, tỉnh Bình Dương	tổ 6-7 đường 30/4, phường Phú Lợi, Thủ Dầu Một, tỉnh Bình Dương	\N	\N
-1624801040036	TRẦN THỊ BÍCH	NGỌC	1998-11-25	Nữ	01634271579	bichngocd16ht01@gmail.com	D16HT01	281108702	ấp Rạch Chàm, xã An Bình, huyện Phú Giáo , tỉnh Bình Dương	377 Lê Hồng Phong , khu phố 8, phường Phú Hòa, tp Thủ Dầu Một, tỉnh Bình Dương	\N	\N
-1624801040040	HỒ MINH	NHỰT	1998-08-25	Nam	01654487067	phamducly111@gmail.com	D16HT01	281108703	Ấp Hốc Măng xã Long Tân huyện Dầu Tiếng tỉnh Bình Dương	359 Huỳnh Thị Hiếu xã Tân An Tp. Thủ Dầu Một Bình Dương	\N	\N
-1624801040041	NGUYỄN MINH	NHỰT	1998-01-30	Nam	0921200730	nhut30011998@gmail.com	D16HT01	281108704	\N	\N	\N	\N
-1624801040074	HOÀNG	PHÚC	1997-04-20	Nam	01654313355	269phuchoang@gmail.com	D16HT01	281108705	tổ 1, ấp 1B, xã phước hòa, huyện phú giáo, tỉnh bình dương	84/6 khu 2, phường phú hòa, tp.TDM	\N	\N
-1624801040044	NGUYỄN HOÀI	PHƯƠNG	1998-07-26	Nam	01649762333	hoaiphuong26071998@gmail.com	D16HT01	281108706	22 Tổ 14, ấp Bến Cát,Phước Sang,Phú Giao,Bình Dương  	\N	\N	\N
-1624801040047	LÊ THỊ NHƯ	QUỲNH	1998-08-08	Nữ	096982419	lethinhuquynh365@gmail.com	D16HT01	281108708	Đội 4, thôn Hưng Nghĩa, xã Phước Nghĩa, huyện Tuy Phước, tỉnh Bình Định	288/11/4, Huỳnh Văn Lũy, Thủ Dầu Một, Bình Dương	\N	\N
-1624801040048	LÊ MINH	SANG	1998-08-16	Nam	1677411130	sprol878@gmail.com	D16HT01	281108709	Ấp 2, Xã Bình Lợi ,Huyện Vĩnh Cửu, Tỉnh Đồng Nai	\N	\N	\N
-1624801040049	NGUYỄN CHÂU	SANG	1998-01-22	Nam	01668721846	ncsang98@gmail.com	D16HT01	281108710	183, Tổ 4, Ấp Bàu Hốt, Xã Lai Uyên, Huyện Bàu Bàng, Bình Dương 	183, Tổ 4, Ấp Bàu Hốt, Xã Lai Uyên, Huyện Bàu Bàng, Bình Dương	\N	\N
-1624801040050	NGUYỄN HỮU	TÀI	1998-03-25	Nam	976465271	thuong1271998@gmail.com	D16HT01	281108711	tổ 2 ấp 1 xã Tân Thành Huyện Bắc Tân Uyên Tỉnh Bình Dương	tổ 2 ấp 1 xã Tân Thành Huyện Bắc Tân Uyên Tỉnh Bình Dương	\N	\N
-1624801030129	VŨ MINH	LƯỢNG	1998-02-23	Nam	1642805544	vuminhluong3@gmail.com	D16PM02	2811086432	\N	Số nhà 119/6/52,Đường Hoàng Hoa Thám,Khu phố 7,Tổ 98,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N
-1624801030131	PHAN VĂN	THIỊNH	1998-05-09	Nam	1636142697	phanthinh601@gmail.com	D16PM02	2811086433	\N	\N	\N	\N
-1624801030134	VÕ TRÍ	THÔNG	1998-11-10	Nam	\N	\N	D16PM02	2811086434	\N	\N	\N	\N
-1624801030135	NGUYỄN ĐÌNH	LINH	1998-01-17	Nam	1692600008	dlsnipercfvn@gmail.com	D16PM02	2811086435	\N	\N	\N	\N
-1624801030147	NGUYỄN TẤN	TRƯỜNG	1998-01-08	Nam	0976349172	truong.ntt1998@gmail.com	D16PM02	2811086436	\N	\N	\N	\N
-1625202010106	TRẦN MINH	HƯNG	1998-11-17	Nam	1673007856	hungga1711@gmail.com	D16PM02	2811086437	\N	\N	\N	\N
-1624801040070	HỒ NGUYỄN QUỐC	VINH	1998-07-17	Nam	01235134243	hnqv1998bd@gmail.com	D16HT01	281108729	80 kp2, đường Lê Chí Dân, P. Hiệp An, Bình Dương	\N	\N	\N
-1624801040046	NGUYỄN NGỌC	QUÝ	1997-04-14	Nam	0333839298	quynguyen97cntt@gmail.com	D16HT01	281108688	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	Bình Dương	\N
+1624801040052	TRẦN VĂN	TÂN	1998-03-13	Nam	0966375505	trantan598497@gmail.com	D16HT01	281108714	Thôn phú lợi, Xã Phú Riềng, Huyện Phú Riềng, Tỉnh Bình Phước 	\N	\N	TRẦN VĂN TÂN
+1624801030119	NGUYỄN MINH	VƯƠNG	1998-11-27	Nam	\N	0	D16PM02	2811086424	\N	\N	\N	NGUYỄN MINH VƯƠNG
+1624801030125	NGUYỄN VĨNH	TOÀN	1998-02-06	Nam	1676696642	tn819936@gmail.com	D16PM02	2811086430	\N	\N	\N	NGUYỄN VĨNH TOÀN
+1624801040070	HỒ NGUYỄN QUỐC	VINH	1998-07-17	Nam	01235134243	hnqv1998bd@gmail.com	D16HT01	281108729	80 kp2, đường Lê Chí Dân, P. Hiệp An, Bình Dương	\N	\N	HỒ NGUYỄN QUỐC VINH
+1624801040046	NGUYỄN NGỌC	QUÝ	1997-04-14	Nam	0333839298	quynguyen97cntt@gmail.com	D16HT01	281108688	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	Bình Dương	NGUYỄN NGỌC QUÝ
+1624801040051	HUỲNH THANH	TÂM	1998-09-28	Nam	0923727741	thanhtam28ss@gmail.com	D16HT01	281108712	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	\N	HUỲNH THANH TÂM
+1624801040059	ĐOÀN TRUNG	THÀNH	1998-07-06	Nam	01654510246	thanhmoc115@gmail.com	D16HT01	281108715	\N	\N	\N	ĐOÀN TRUNG THÀNH
+1624801040060	NGUYỄN TẤN	THÀNH	1998-07-14	Nam	0937519106	tanthanhphuochoa@gmail.com	D16HT01	281108716	542/7, tổ 2, ấp 1B, xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương	\N	\N	NGUYỄN TẤN THÀNH
+1624801040061	TRỊNH TRỌNG	THÀNH	1998-06-27	Nam	1662733555	trongthanh20161998@gmail.com	D16HT01	281108717	số 66, đường Thích Quảng Đức, phường Phú Hòa, TP Thủ Dầu Một, Bình Dương	số 66, đường Thích Quảng Đức, phường Phú Hòa, TP Thủ Dầu Một, Bình Dương	\N	TRỊNH TRỌNG THÀNH
+1624801040062	LA NGỌC PHÚ	THỊNH	1998-10-26	Nữ	01658046655	phuthinhla98@gmail.com	D16HT01	281108718	490 tổ 31 khu 3 đường CMT8 phường Hiệp Thành Tx. Thủ Dầu Một tỉnh Bình Dương	363 tổ 31 khu 3 đường CMT8 Phường Hiệp Thành Tp. Thủ Dầu Một, Bình Dương	\N	LA NGỌC PHÚ THỊNH
+1624801040068	NGUYỄN QUỐC	TRUNG	1997-05-12	Nam	0912938394	t0912938394@gmail.com	D16HT01	281108727	\N	\N	\N	NGUYỄN QUỐC TRUNG
+1624801040087	LÊ ANH	TUẤN	1997-05-19	Nam	0969277351	leanhtuan19597@gmail.com	D16HT01	281108733	xã Phú Thuận,Huyện Phú Tân,TP.Cà Mau	ấp cây sắn,xã Lai Uyên,Huyện Bàu Bàng,Bình Dương	\N	LÊ ANH TUẤN
+1624801030077	PHẠM MINH	PHÚC	1998-05-29	Nam	1882221110	mylove169295@gmail.com	D16PM02	2811086400	421, Lê Chí Dân, Khu phố 7 , Phương Tân An,Phường Tân An,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	PHẠM MINH PHÚC
+1624801030081	LÝ ANH	QUÂN	1998-03-31	Nam	1214962589	lyanhquan20@gmail.com	D16PM02	2811086401	\N	\N	\N	LÝ ANH QUÂN
+1624801030082	VƯƠNG DĨ 	QUYỀN	1997-05-11	Nam	1656675417	quyenlegend2013@gmail.com	D16PM02	2811086402	\N	\N	\N	VƯƠNG DĨ  QUYỀN
+1624801030084	HOÀNG NGỌC PHƯỚC	SANG	1998-01-22	Nam	927261393	hoangs4ng@gmail.com	D16PM02	2811086403	\N	\N	\N	HOÀNG NGỌC PHƯỚC SANG
+1624801030085	NGUYỄN NGỌC MINH	SANG	1998-07-16	Nam	926221113	ngocminhsang2016@gmail.com	D16PM02	2811086404	Số 495, đường Nguyễn Chí Thanh, khu 7,Phường Tương Bình Hiệp,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	NGUYỄN NGỌC MINH SANG
+1624801030086	NGUYỄN TRỌNG	SANG	1997-09-07	Nam	01689712323	trongsangnguyen1997@gmail.com	D16PM02	2811086405	\N	\N	\N	NGUYỄN TRỌNG SANG
+1624801030087	TRẦN THỊ	SÂM	1998-02-02	Nữ	1685477690	tranthisam2298@gmail,com	D16PM02	2811086406	\N	331/35/3 tổ 43 phường phú lợi,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRẦN THỊ SÂM
+1624801030088	ĐINH TẤN	TÀI	1998-10-18	Nam	1867001663	dinhtantai1810@gmail.com	D16PM02	2811086407	\N	\N	\N	ĐINH TẤN TÀI
+1624801030089	ĐOÀN TẤN	TÀI	1998-09-19	Nam	1694413777	doantantai1909@gmail.com	D16PM02	2811086408	\N	\N	\N	ĐOÀN TẤN TÀI
+1624801030091	HỒ THỊ YẾN	TIÊN	1998-09-09	Nữ	1656767700	tientientien73@gmail.com	D16PM02	2811086409	\N	172/20 - tổ 8 - khu phố 5 - phường Phú Hòa - tp Thủ Dầu Một - Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	HỒ THỊ YẾN TIÊN
+1624801030092	NGUYỄN THANH	TIỀN	1998-07-10	Nam	1234043547	nguyenthanhtien998@gmail.com	D16PM02	2811086410	\N	\N	\N	NGUYỄN THANH TIỀN
+1624801030094	NGUYỄN VĂN	TOÀN	1998-09-27	Nam	1627580849	anhem4nguoi@gmail. com	D16PM02	2811086411	\N	\N	\N	NGUYỄN VĂN TOÀN
+1624801030097	NGUYỄN THANH	TÙNG	1998-03-29	Nam	974582675	29tung98@gmail.com	D16PM02	2811086412	\N	\N	\N	NGUYỄN THANH TÙNG
+1624801030098	NGUYỄN HỮU	TƯỜNG	1998-09-16	Nam	1665931558	nht160998@gmail.com	D16PM02	2811086413	\N	\N	\N	NGUYỄN HỮU TƯỜNG
+1624801030099	NGUYỄN THU	THANH	1998-01-19	Nữ	0913189514	monmongon191@gmail.com	D16PM02	2811086414	\N	382/8 Phạm Ngũ Lão,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN THU THANH
+1624801030103	NGUYỄN HỮU	THẮNG	1998-06-29	Nam	0968347546	huuthang296@gmail.com	D16PM02	2811086415	\N	331/18,tổ 44 khu 5, phường phú lợi, thành phố thủ dầu 1 bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN HỮU THẮNG
+1624801030105	PHẠM NGUYỄN HỮU	THIỆN	1998-07-10	Nam	0146714040	bibi9768@gmail.com	D16PM02	2811086416	1011/4, khu 4, đường Lê Hồng Phong, phường Phú Thọ, thành phố Thủ Dầu Một, tỉnh Bình Dương,Phường Phú Thọ,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	PHẠM NGUYỄN HỮU THIỆN
+1624801030108	LÊ THỊ THÙY	TRANG	1998-06-26	Nữ	1682223774	tinyle1708@gmail.com	D16PM02	2811086417	\N	\N	\N	LÊ THỊ THÙY TRANG
+1624801030110	VÕ MINH	TRÍ	1998-08-01	Nam	01887510441	nam0dong0co@gmail.com	D16PM02	2811086418	646, Nguyễn Tri Phương, khu 9,Phường Chánh Nghĩa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	VÕ MINH TRÍ
+1624801030111	NGUYỄN HÀ	TRIỀU	1998-06-17	Nam	\N	\N	D16PM02	2811086419	\N	\N	\N	NGUYỄN HÀ TRIỀU
+1624801030113	NGUYỄN THỊ THANH	TRÚC	1998-03-04	Nữ	1658552999	trucnguyen431998@gmail.com	D16PM02	2811086420	34/16 khu phố Đông A, Đông Hòa - Dĩ An - Bình Dương ,Phường Đông Hòa,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	NGUYỄN THỊ THANH TRÚC
+1624801030114	PHẠM VĂN	TRUNG	1998-08-27	Nam	969052509	trungpham.pt36@gmail.com	D16PM02	2811086421	\N	Phường phú lợi,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	PHẠM VĂN TRUNG
+1624801030115	TRẦN THÀNH	TRUNG	1997-12-16	Nam	1883181646	tranthanhtrung16121997@gmail.com	D16PM02	2811086422	68,DT744,ấp An Thành ,Xã An Tây,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	TRẦN THÀNH TRUNG
+1624801030118	CAO KHẮC	VIỆT	1998-03-28	Nam	976124806	khacviet2803@gmail.com	D16PM02	2811086423	\N	\N	\N	CAO KHẮC VIỆT
+1624801030120	TRẦN PHƯƠNG	NAM	1998-08-23	Nam	0913390120	namem339@gmail.com	D16PM02	2811086425	\N	299 phú lợi khu phõ 4,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRẦN PHƯƠNG NAM
+1624801030121	PHẠM VĂN	PHỤNG	1998-01-16	Nam	01653439859	vanphung0198@gmail.com	D16PM02	2811086426	492,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	PHẠM VĂN PHỤNG
+1624801030122	NGUYỄN HỮU	PHÚC	1998-01-26	Nam	0969482164	hanphuc1026@gmail.com	D16PM02	2811086427	\N	20/2 ,Phường Bình Hòa,Thị xã Thuận An,Tỉnh Bình Dương	\N	NGUYỄN HỮU PHÚC
+1624801030123	CHÂU QUỐC	TUẤN	1998-04-05	Nam	1632463311	chautuan5498@gmail.com	D16PM02	2811086428	\N	\N	\N	CHÂU QUỐC TUẤN
+1424801030013	LƯƠNG QUANG	CƯƠNG	1996-02-10	Nam	01654201033	quangcuongnd29296@gmail.com	D16PM01	281108800	\N	\N	\N	LƯƠNG QUANG CƯƠNG
+1624801030001	TRẦN THẾ   AN	AN	1993-08-18	Nam	01632284499	tranthean23@gmail.com	D16PM01	281108801	72B/10 KP Đông Nhì, P. Lái Thiêu. Tx.Thuận An,tỉnh Bình Dương,Phường Lái Thiêu,Thị xã Thuận An,Tỉnh Bình Dương	\N	\N	TRẦN THẾ   AN AN
+1624801030002	NGUYỄN HOÀNG NAM	ANH	1998-10-31	Nam	01692255550	anhnguyen3198@gmail.com	D16PM01	281108802	\N	\N	\N	NGUYỄN HOÀNG NAM ANH
+1624801030004	NGUYỄN HOÀI	ÂN	1998-05-17	Nam	01683367670	carlosking.vn@gmail.com	D16PM01	281108803	1516 khu 6 định hòa  thủ dầu một bình dương,Phường Định Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	NGUYỄN HOÀI ÂN
+1624801030005	NGUYỄN HOÀNG	ÂN	1997-05-15	Nam	0973192185	kishiz094@gmail.com	D16PM01	281108804	\N	424/61 Lê Hồng Phong, phường Phú Hòa, Thủ Dầu Một, Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN HOÀNG ÂN
+1624801030006	HÀ GIA   BẢO	BẢO	1998-09-26	Nam	0948866263	baobaovabao@gmail.com	D16PM01	281108805	\N	613/4 Tổ 83, Khu Phố 9, Phường Phú Lợi, Thủ Dầu Một, Bình Dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	HÀ GIA   BẢO BẢO
+1624801030009	NGUYỄN THANH	BÌNH	1998-09-14	Nam	01637297238	thanhbinh19998@gmail.com	D16PM01	281108806	số 186, khu 1, tổ 5, khu phố An Lợi, phường Hòa Lợi, thị xã Bến Cát, tình Bình Dương,Phường Hòa Lợi,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	NGUYỄN THANH BÌNH
+1624801030010	NGUYỄN CHÍ	CƯỜNG	1998-03-23	Nam	01633734476	kibobao123@gmail.com	D16PM01	281108807	107/A Đoàn Thị Liên tổ 12 khu 2,TP Thủ Dầu Một,Tỉnh Bình Dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	\N	NGUYỄN CHÍ CƯỜNG
+1624801030012	TRẦN TIẾN	CƯỜNG	1998-12-20	Nam	0973558351	tincngtrn@gmail.com	D16PM01	281108808	55/8, Văn Công Khai, Khu 9, Tổ 60, Phường Phú Cường, TP Thủ Dầu Một,,,Tỉnh Bình Dương	\N	\N	TRẦN TIẾN CƯỜNG
+1624801030013	NGUYỄN ĐÌNH	DŨNG	1997-02-17	Nam	\N	sahoang123456789@gmail.com	D16PM01	281108809	\N	\N	\N	NGUYỄN ĐÌNH DŨNG
+1624801030021	NGUYỄN THÀNH	ĐẠT	1996-09-29	Nam	01648619252	datprono1001@gmail.com	D16PM01	281108810	\N	số nhà 77/5 khu phố tân phước thị xã Dĩ An tỉnh Bình Dương,Phường Tân Bình,Thị xã Dĩ An,Tỉnh Bình Dương	\N	NGUYỄN THÀNH ĐẠT
+1624801030022	NGÔ XUÂN	ĐĂNG	1998-11-20	Nam	01663034356	xuadang98@gmail.com	D16PM01	281108811	\N	\N	\N	NGÔ XUÂN ĐĂNG
+1624801030023	NGUYỄN KHẮC	ĐĂNG	1996-09-07	Nam	01646172777	khacdang07091996@gmail.com	D16PM01	281108812	40/6 Trung Thắng, Bình Thắng, Dĩ An, Bình Dương.,Ngoài tỉnh,,Tỉnh Bình Dương	\N	\N	NGUYỄN KHẮC ĐĂNG
+1624801030027	TRẦN MINH	HẢI	1998-01-22	Nam	01667167112	kumanypo@gmail.com	D16PM01	281108813	\N	453/53- tổ8-kp8-p.phú hòa-bd,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRẦN MINH HẢI
+1624801030029	LÊ TRỌNG	HẬU	1998-12-23	Nam	01645667509	lehausk@gmail.com	D16PM01	281108814	842/31/2/3 đường nguyễn thị minh khai, kp. tân thắng, p. tân bình, tx. dĩ an, tỉnh bình dương,Phường Tân Bình,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	LÊ TRỌNG HẬU
+1624801030031	VÕ VĂN	HIỆP	1997-08-28	Nam	0977708610	vovanhiepqb@gmail.com	D16PM01	281108815	\N	63/10, tổ 2, khu phố 6,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	VÕ VĂN HIỆP
+1624801030032	LÊ TRUNG	HIẾU	1997-10-19	Nam	01638006997	letrunghieu1921997@gmail.com	D16PM01	281108816	\N	17/2 huỳnh văn nghệ , khu phố bốn , phường phú lợi , tp thủ dầu một, tỉnh bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	LÊ TRUNG HIẾU
+1624801030033	NGUYỄN THANH	HIẾU	1998-01-06	Nam	01647394677	hieunguyen1998nhoem@gmail.com	D16PM01	281108817	\N	51 ,khu3 ,huỳnh văn lũy ,phường phú lợi ,thủ dầu một ,bình dương,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN THANH HIẾU
+1624801030035	TRẦN TRUNG	HIẾU	1998-01-18	Nam	0941451282	tthieu10a13@gmail.com	D16PM01	281108818	\N	424/44/29,Lê Hồng Phong,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRẦN TRUNG HIẾU
+1624801030038	LƯƠNG MINH	HOÀ	1998-12-23	Nam	\N	luonghoa322@gmail.com	D16PM01	281108819	\N	82 , khu phố 4,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	LƯƠNG MINH HOÀ
+1624801030045	NGUYỄN QUANG	HUY	1998-08-08	Nam	\N	huynguyen080898@gmail.com	D16PM01	281108820	\N	42 Trần Văn Ơn, Tổ 5, Khu Phố 7,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN QUANG HUY
+1624801030046	VÕ GIA	HUY	1997-11-24	Nam	\N	huygalam057@gmail.com	D16PM01	281108821	\N	\N	\N	VÕ GIA HUY
+1624801030050	ĐỖ THỊ	HƯƠNG	1998-08-20	Nữ	01637008027	khietnhi0310@gmail.com	D16PM01	281108822	185/43 Trần Hưng Đạo, Khu phố Tây A,Phường Dĩ An,Thị xã Dĩ An,Tỉnh Bình Dương	\N	\N	ĐỖ THỊ HƯƠNG
+1624801030052	NGUYỄN VƯƠNG DUY	KHANG	1998-12-17	Nam	0914544737	taikhoanlaj@gmail.com	D16PM01	281108823	74,tổ 3 -khu phố khánh hội -thị trấn tân phước khánh-huyện tân uyên -tỉnh Bình Dương,Phường Tân Phước Khánh,Thị xã Tân Uyên,Tỉnh Bình Dương	\N	\N	NGUYỄN VƯƠNG DUY KHANG
+1624801030055	NGUYỄN QUANG	LINH	1998-12-25	Nam	01672325249	linhnguyen1998125@gmail.com	D16PM01	281108824	\N	63/6  đường 30/4  khu 6. Phường.Phú hòa tp TDM Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	NGUYỄN QUANG LINH
+1624801030059	NGUYỄN TẤN	LỘC	1998-07-05	Nam	01645303311	locn049@gmail.com	D16PM01	281108825	số 25 , tổ 1,ấp kiến an,Xã An Điền,Thị xã Bến Cát,Tỉnh Bình Dương	\N	\N	NGUYỄN TẤN LỘC
+1624801030061	PHẠM TRÍ	LỰC	1998-08-06	Nam	01637258800	trilucp8@gmail.com	D16PM01	281108826	\N	172/27 tổ 10 khu phố 5, đường Phú Lợi, phường Phú Hòa, thành phố Thủ Dầu Một, tỉnh Bình Dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	PHẠM TRÍ LỰC
+1624801030063	TỪ THIỆN BẢO	MINH	1998-03-20	Nam	0966075663	vcb000111@gmail.com	D16PM01	281108827	\N	số nhà 82, khu phố 4, Phú Hoà, TDM, BD,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TỪ THIỆN BẢO MINH
+1624801030064	HÀ NHỰT	NAM	1998-10-06	Nam	01236978290	hanhutnam@gmail.com	D16PM01	281108828	\N	\N	\N	HÀ NHỰT NAM
+1624801030066	TRẦN ĐỨC	NGHĨA	1998-04-18	Nam	01695054584	trannampkpk@gmail.com	D16PM01	281108829	\N	48/135 khu 8 tổ 114 phường Hiệp Thành. TP Thủ Dầu Một, Tỉnh Bình Dương,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRẦN ĐỨC NGHĨA
+1624801030069	LÝ QUANG	NGHĨA	1998-03-27	Nam	\N	nghiatrung01.nl@gmail.com	D16PM01	281108830	\N	24 Lê Thị Trung,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	LÝ QUANG NGHĨA
+1624801030071	LÊ XUÂN	NHẬT	1998-11-11	Nam	0967324471	nhata8.tn1@gmail.com	D16PM01	281108831	\N	Số 24 Lê Thị Trung ,Phường Phú Lợi,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	LÊ XUÂN NHẬT
+1624801030072	TRẦN THỊ HUỲNH	NHƯ	1998-11-05	Nữ	01699686262	huynhnhutran114@gmail.com	D16PM01	281108832	\N	Tổ 39, Khu phố Chiêu Liêu, Phường Tân Đông Hiệp, Tx Dĩ An, Tỉnh Bình Dương,Phường Tân Đông Hiệp,Thị xã Dĩ An,Tỉnh Bình Dương	\N	TRẦN THỊ HUỲNH NHƯ
+1624801030144	MAI HUY	HOÀNG	1998-06-18	Nam	01652212199	sasukezentatsu@gmail.com	D16PM01	281108833	\N	số nhà 29 khu 4 đường N2 phường phú hòa thành phố thủ dầu một bình dương,Phường Phú Hòa,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	MAI HUY HOÀNG
+1624801030146	NGUYỄN BÁ	TÚ	1997-03-17	Nam	0965076770	nbt17397@gmail.com	D16PM01	281108834	\N	\N	\N	NGUYỄN BÁ TÚ
+1624801030124	TRỊNH XUÂN	ĐỨC	1997-08-17	Nam	0967084484	trinhxuanduc997@gmail.com	D16PM02	2811086429	\N	48/135 Đ. hoàng hoa thám, tổ 114, khu 8, P. hiệp thành,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	TRỊNH XUÂN ĐỨC
+1624801030126	TRẦN HỒNG	KHÁNH	1998-02-11	Nam	0973344774	khimoc9a1@gmail.com	D16PM02	2811086431	\N	65A/2 ĐT743, khu phố 1B,Phường An Phú,Thị xã Thuận An,Tỉnh Bình Dương	\N	TRẦN HỒNG KHÁNH
+1624801040003	VÕ QUỐC	BẢO	1998-02-11	Nam	0978168639	quocbao3398@gmail.com	D16HT01	281108680	12 C khu phố Thạnh Qúy phường An Thạnh thị xã Thuận An tỉnh Bình Dương	12 C khu phố Thạnh Qúy phường An Thạnh thị xã Thuận An tỉnh Bình Dương	\N	VÕ QUỐC BẢO
+1624801040004	NGÔ BÁ	CƯỜNG	1998-09-06	Nam	01626839977	ngobacuong2016@gmail.com	D16HT01	281108681	Xã An Đổ Huyện Bình Lục Tỉnh Hà Nam	251BPhường Bình Thung khu Phố Bình An Thị Xã Dĩ An Tỉnh Bình Dương	\N	NGÔ BÁ CƯỜNG
+1624801040010	NGUYỄN BÁ	ĐẠT	1998-06-15	Nam	01696901996	badatdp69@gmail.com	D16HT01	281108682	Tổ dân Phố 3 - Huyện Đức Phổ - Tỉnh Quảng Ngãi	48/60 Hoàng Hoa Thám - TDM - Bình Dương	\N	NGUYỄN BÁ ĐẠT
+1624801040012	TRẦN PHƯỚC	ĐỨC	1998-08-08	Nam	1657950246	tranphuocduc1998@gmail.com	D16HT01	281108685	99, ĐT 741, Ấp Vĩnh An, Xã Vĩnh Hòa, Huyện Phú Giáo, Bình Dương	395/85, khu phố 8, phường Phú Hòa, Thủ Dầu Một, Bình Dương	\N	TRẦN PHƯỚC ĐỨC
+1624801040005	NGUYỄN THỊ THÙY	DUNG	1998-09-01	Nữ	0911559980	thuydungtk98@gmail.com	D16HT01	281108686	247 Tổ 1 , Ấp 5 - Thiện Hưng - Bù Đốp - Bình Phước	188 Khu 8 Trần Văn Ơn - Phú Hòa - TDM - Bình Dương	\N	NGUYỄN THỊ THÙY DUNG
+1624801040077	CHÂU ĐẠI	DƯƠNG	1998-07-06	Nam	1688566726	chaudaiduong98@gmail.com	D16HT01	281108687	Thôn Hiệp Cường, xã Tân Tiến, Thị xã Lagi, Bình Thuận	48/60 Hoàng Hoa Thám, phường Phú Hòa, Thủ Dầu Một, Bình Dương	\N	CHÂU ĐẠI DƯƠNG
+1624801040014	TRẦN VĂN	GIÀU	1998-01-09	Nam	0967726553	tranvangiaud16ht01@gmail.com	D16HT01	281108688	107 ấp Lai Khê, xã Lai Hưng, huyện Bàu Bàng, tỉnh Bình Dương	\N	\N	TRẦN VĂN GIÀU
+1424801040093	TRẦN CÔNG	HẬU	1996-03-30	Nam	0924077882	conghau3003@gmail.com	D16HT01	281108691	2/9 P Bình Nhâm, Tx Thuận An, BD	2/9 P Bình Nhâm, Tx Thuận An, BD	\N	TRẦN CÔNG HẬU
+1624801040019	NGUYỄN VĂN	HIỆP	1998-04-03	Nam	0985007100	vanhiep1998@gmail.com	D16HT01	281108692	77, Dx112, Kp8, P.Tân An, Tp.Thủ Dầu Một, tỉnh Bình Dương	77, Dx112, Kp8, P.Tân An, Tp.Thủ Dầu Một, tỉnh Bình Dương	\N	NGUYỄN VĂN HIỆP
+1624801040020	PHẠM TRUNG	HIẾU	1998-10-01	Nam	1663073789	phamhieu5969@gmail.com	D16HT01	281108693	6/14, Khu Phố 4B , Thị Trấn Dầu Tiếng, H.Dầu Tiếng, Tỉnh Bình Dương	136/19 Tổ 5 . Khu Phố 8. Phường Phú Hòa. Tp Thủ Dầu Một, tỉnh Bình Dương	\N	PHẠM TRUNG HIẾU
+1624801040027	HUỲNH DUY	KHÁNH	1998-09-22	Nam	944028362	duykhanh220998@gmail.com	D16HT01	281108696	983/2/8/1  tổ 73 khu 9 phuòng hiệp an tp.tdm bd	983/2/8/1  tổ 73 khu 9 phuòng hiệp an tp.tdm bd	\N	HUỲNH DUY KHÁNH
+1624801040030	TRIỆU PHƯỚC	LỘC	1998-06-03	Nam	0971500580	trieuphuocloccoder@gmail.com	D16HT01	281108697	thôn 4, xã Đắk-Ơ, huyện Bù Gia Mập, tỉnh Bình Phước	244/37/23, tổ 8, khu 5, phường Phú Hòa, tp Thủ Dầu Một, tỉnh Bình Dương	\N	TRIỆU PHƯỚC LỘC
+1524801040079	NGUYỄN TẤN	LỢI	1997-03-17	Nam	01277252477	tanloi.bdp@gmail.com	D16HT01	281108698	Tổ 9, KP4, phường Thới Hòa, Bến Cát, Bình Dương	Tổ 9, KP4, phường Thới Hòa, Bến Cát, Bình Dương	\N	NGUYỄN TẤN LỢI
+1624801040076	NGUYỄN THỊ TRÀ	MY	1998-03-12	Nữ	0976984828	Ngthitramy92@gmail.com	D16HT01	281108699	D3/063, Ấp Lê Lợi 2, Xã Quang Trung, Huyện Thống Nhất, Tỉnh Đồng Nai	288/11/4, Huỳnh Văn Lũy, Thủ Dầu Một, Bình Dương	\N	NGUYỄN THỊ TRÀ MY
+1624801040032	LÊ VĂN	NAM	1997-04-10	Nam	01644023451	levannamtdmu@gmail.com	D16HT01	281108700	KP3, phường Tân Định, Bến Cát, Bình Dương	KP3, phường Tân Định, Bến Cát, Bình Dương	\N	LÊ VĂN NAM
+1624801040033	TRỊNH THỊ THÚY	NGA	1998-08-30	Nữ	01674137141	thuynga30898@gmail.com	D16HT01	281108701	ấp Lai Khê, xã Lai Hưng, huyện  Bàu Bàng, tỉnh Bình Dương	tổ 6-7 đường 30/4, phường Phú Lợi, Thủ Dầu Một, tỉnh Bình Dương	\N	TRỊNH THỊ THÚY NGA
+1624801040036	TRẦN THỊ BÍCH	NGỌC	1998-11-25	Nữ	01634271579	bichngocd16ht01@gmail.com	D16HT01	281108702	ấp Rạch Chàm, xã An Bình, huyện Phú Giáo , tỉnh Bình Dương	377 Lê Hồng Phong , khu phố 8, phường Phú Hòa, tp Thủ Dầu Một, tỉnh Bình Dương	\N	TRẦN THỊ BÍCH NGỌC
+1624801040040	HỒ MINH	NHỰT	1998-08-25	Nam	01654487067	phamducly111@gmail.com	D16HT01	281108703	Ấp Hốc Măng xã Long Tân huyện Dầu Tiếng tỉnh Bình Dương	359 Huỳnh Thị Hiếu xã Tân An Tp. Thủ Dầu Một Bình Dương	\N	HỒ MINH NHỰT
+1624801040041	NGUYỄN MINH	NHỰT	1998-01-30	Nam	0921200730	nhut30011998@gmail.com	D16HT01	281108704	\N	\N	\N	NGUYỄN MINH NHỰT
+1624801040074	HOÀNG	PHÚC	1997-04-20	Nam	01654313355	269phuchoang@gmail.com	D16HT01	281108705	tổ 1, ấp 1B, xã phước hòa, huyện phú giáo, tỉnh bình dương	84/6 khu 2, phường phú hòa, tp.TDM	\N	HOÀNG PHÚC
+1624801040044	NGUYỄN HOÀI	PHƯƠNG	1998-07-26	Nam	01649762333	hoaiphuong26071998@gmail.com	D16HT01	281108706	22 Tổ 14, ấp Bến Cát,Phước Sang,Phú Giao,Bình Dương  	\N	\N	NGUYỄN HOÀI PHƯƠNG
+1624801040047	LÊ THỊ NHƯ	QUỲNH	1998-08-08	Nữ	096982419	lethinhuquynh365@gmail.com	D16HT01	281108708	Đội 4, thôn Hưng Nghĩa, xã Phước Nghĩa, huyện Tuy Phước, tỉnh Bình Định	288/11/4, Huỳnh Văn Lũy, Thủ Dầu Một, Bình Dương	\N	LÊ THỊ NHƯ QUỲNH
+1624801040048	LÊ MINH	SANG	1998-08-16	Nam	1677411130	sprol878@gmail.com	D16HT01	281108709	Ấp 2, Xã Bình Lợi ,Huyện Vĩnh Cửu, Tỉnh Đồng Nai	\N	\N	LÊ MINH SANG
+1624801040049	NGUYỄN CHÂU	SANG	1998-01-22	Nam	01668721846	ncsang98@gmail.com	D16HT01	281108710	183, Tổ 4, Ấp Bàu Hốt, Xã Lai Uyên, Huyện Bàu Bàng, Bình Dương 	183, Tổ 4, Ấp Bàu Hốt, Xã Lai Uyên, Huyện Bàu Bàng, Bình Dương	\N	NGUYỄN CHÂU SANG
+1624801040050	NGUYỄN HỮU	TÀI	1998-03-25	Nam	976465271	thuong1271998@gmail.com	D16HT01	281108711	tổ 2 ấp 1 xã Tân Thành Huyện Bắc Tân Uyên Tỉnh Bình Dương	tổ 2 ấp 1 xã Tân Thành Huyện Bắc Tân Uyên Tỉnh Bình Dương	\N	NGUYỄN HỮU TÀI
+1624801030129	VŨ MINH	LƯỢNG	1998-02-23	Nam	1642805544	vuminhluong3@gmail.com	D16PM02	2811086432	\N	Số nhà 119/6/52,Đường Hoàng Hoa Thám,Khu phố 7,Tổ 98,Phường Hiệp Thành,TP. Thủ Dầu Một,Tỉnh Bình Dương	\N	VŨ MINH LƯỢNG
+1624801030131	PHAN VĂN	THIỊNH	1998-05-09	Nam	1636142697	phanthinh601@gmail.com	D16PM02	2811086433	\N	\N	\N	PHAN VĂN THIỊNH
+1624801030134	VÕ TRÍ	THÔNG	1998-11-10	Nam	\N	\N	D16PM02	2811086434	\N	\N	\N	VÕ TRÍ THÔNG
+1624801030135	NGUYỄN ĐÌNH	LINH	1998-01-17	Nam	1692600008	dlsnipercfvn@gmail.com	D16PM02	2811086435	\N	\N	\N	NGUYỄN ĐÌNH LINH
+1624801030147	NGUYỄN TẤN	TRƯỜNG	1998-01-08	Nam	0976349172	truong.ntt1998@gmail.com	D16PM02	2811086436	\N	\N	\N	NGUYỄN TẤN TRƯỜNG
+1625202010106	TRẦN MINH	HƯNG	1998-11-17	Nam	1673007856	hungga1711@gmail.com	D16PM02	2811086437	\N	\N	\N	TRẦN MINH HƯNG
 \.
 
 
@@ -2019,8 +2025,8 @@ COPY public.spatial_ref_sys (srid, auth_name, auth_srid, srtext, proj4text) FROM
 --
 
 COPY public.taikhoan (id, tendangnhap, matkhau, ngaytao, quyen, trangthai, code) FROM stdin;
-480	1624801040046	$2y$10$UDhRR5TimDOjukot1fHhEOjHViyOgWJjWeRWaJaoS5WbhNc0kwNhm	2020-03-02	2	1	\N
 460	1624801040004	$2y$10$3qpTDu8Yws1Oez1cN.oiH.FEROi924P16r5b6Uc62kKFSbxNQ0mzS	2020-03-02	2	0	\N
+480	1624801040046	$2y$10$HBbzz2B1wjLwHQn48SvpvOqvzhVymT5MYZxwngKJVswrzskGuK/wS	2020-03-02	2	1	\N
 459	1624801040003	$2y$10$lk0GHQ25xHT7hpQPyDJj1O0mRNNug3gy/pwHSiCpusHzzrzOtiQEO	2020-03-02	2	0	\N
 461	1624801040010	$2y$10$/F.po.sSihya6aH4He4vZuSNbWVUMCQQ6hR3AVzICrwVKTAkM.mfW	2020-03-02	2	0	\N
 462	1624801040012	$2y$10$5G6ryZtKkQ9Y26VlUooHt.tgclfgzz/BfJpPA0/h/LtTYUs1d4PvS	2020-03-02	2	0	\N
@@ -2138,7 +2144,7 @@ COPY public.taikhoan (id, tendangnhap, matkhau, ngaytao, quyen, trangthai, code)
 --
 
 COPY public.thoigian (id, loaiapdung, ngaybatdau, ngayketthuc) FROM stdin;
-12	1	2020-07-02	2020-07-03
+12	1	2020-07-12	2020-07-14
 \.
 
 
@@ -2193,14 +2199,14 @@ COPY public.vungranhgioiphuongtxtdm_region (gid, tenphuong, geom, "fillColor", c
 -- Name: anhbaiviet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.anhbaiviet_id_seq', 92, true);
+SELECT pg_catalog.setval('public.anhbaiviet_id_seq', 94, true);
 
 
 --
 -- Name: baiviet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.baiviet_id_seq', 93, true);
+SELECT pg_catalog.setval('public.baiviet_id_seq', 94, true);
 
 
 --
@@ -2221,28 +2227,28 @@ SELECT pg_catalog.setval('public.duong_tdm_polyline_gid_seq', 673, true);
 -- Name: khutrodaxoa_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.khutrodaxoa_id_seq', 6, true);
+SELECT pg_catalog.setval('public.khutrodaxoa_id_seq', 8, true);
 
 
 --
 -- Name: otro_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.otro_id_seq', 62, true);
+SELECT pg_catalog.setval('public.otro_id_seq', 63, true);
 
 
 --
 -- Name: taikhoan_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.taikhoan_id_seq', 623, true);
+SELECT pg_catalog.setval('public.taikhoan_id_seq', 807, true);
 
 
 --
 -- Name: temp_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.temp_id_seq', 76, true);
+SELECT pg_catalog.setval('public.temp_id_seq', 78, true);
 
 
 --
