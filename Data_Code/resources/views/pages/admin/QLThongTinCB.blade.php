@@ -161,6 +161,8 @@
         </button>
     </div>
     @endif
+
+    <div class="ml-4 mb-3">Tổng số: <?php echo $tongsl; ?> cán bộ</div>
     <!-- <div class="table table-reponsive"> -->
     <div class="card-body">
 

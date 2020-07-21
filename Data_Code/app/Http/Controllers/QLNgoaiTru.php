@@ -30,6 +30,7 @@ class QLNgoaiTru extends Controller
         session()->forget('ngaybatdauxuat');
         session()->forget('ngayketthucxuat');
 
+        $tongsv = sinhvien::all()->count();
         $output=[];
         $result=[];
         $phuongxa = phuong::select(["gid", "tenphuong", "fillColor", "color", "toadodiem", DB::raw("ST_AsGeoJSON(geom) AS geom")])->get();
@@ -67,16 +68,16 @@ class QLNgoaiTru extends Controller
 
             $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->where('ngaydangky','>=',$ngaybatdau)->where('ngaydangky','<=',$ngayketthuc)->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
             $trangthai = 1;
-            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew]);
+            $tongsl = $TTNgoaitru->count();
+            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
         }
         else
         {
             $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop','sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
             $trangthai = 0;
-            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew]);
+            $tongsl = $TTNgoaitru->count();
+            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
         }
-        
-        //$TTNgoaitru = ngoaitru::orderBy('lop','asc')->paginate($pageSize);
         
     }
 
@@ -153,6 +154,7 @@ class QLNgoaiTru extends Controller
     public function search(Request $req){
         $output=[];
         $result=[];
+        $tongsv = sinhvien::all()->count();
         $phuongxa = phuong::select(["gid", "tenphuong", "fillColor", "color", "toadodiem", DB::raw("ST_AsGeoJSON(geom) AS geom")])->get();
         $arrNew =[];
         $toado = [];
@@ -191,7 +193,8 @@ class QLNgoaiTru extends Controller
             $trangthai = 1;
             if($search===null){
                 $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->where('ngoaitru.mssv', '=', $req->session()->get('timkiemngoaitru'))->orWhere('sinhvien.lop', '=', $req->session()->get('timkiemngoaitru'))->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
-                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew]);
+                $tongsl = $TTNgoaitru->count();
+                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
             }
             else
             {
@@ -199,7 +202,8 @@ class QLNgoaiTru extends Controller
 
                 session()->put('timkiemngoaitru', $search);
                 $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->where('ngoaitru.mssv', '=', $search)->orWhere('lop', '=', $search)->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
-                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew]); 
+                $tongsl = $TTNgoaitru->count();
+                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]); 
             }
         }
         else
@@ -208,15 +212,16 @@ class QLNgoaiTru extends Controller
             $trangthai = 0;
             if($search===null){
                 $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->where('ngoaitru.mssv', '=', "%$req->session()->get('timkiemngoaitru')%")->orWhere('lop', '=', "%$req->session()->get('timkiemngoaitru')%")->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
-                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew]);
+                $tongsl = $TTNgoaitru->count();
+                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
             }
             else
             {
                 session()->forget('timkiemngoaitru');
-
                 session()->put('timkiemngoaitru', $search);
                 $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->where('ngoaitru.mssv', '=', $search)->orWhere('lop', '=', $search)->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
-                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew]);  
+                $tongsl = $TTNgoaitru->count();
+                return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);  
             }
             
         } 
@@ -400,6 +405,7 @@ class QLNgoaiTru extends Controller
 
         $output=[];
         $result=[];
+        $tongsv = sinhvien::all()->count();
         $phuongxa = phuong::select(["gid", "tenphuong", "fillColor", "color", "toadodiem", DB::raw("ST_AsGeoJSON(geom) AS geom")])->get();
         $arrNew =[];
         $toado = [];
@@ -445,13 +451,15 @@ class QLNgoaiTru extends Controller
             }
             
             $trangthai = 1;
-            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew]);
+            $tongsl = $TTNgoaitru->count();
+            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai, 'thoigian'=>$ktratg,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
         }
         else
         {
             $TTNgoaitru = DB::table('ngoaitru')->join('sinhvien','ngoaitru.mssv','=','sinhvien.mssv')->select('ngoaitru.mssv', 'tenchungoaitru', 'dienthoaichungoaitru', 'diachingoaitru', 'loaicutru', 'ngaydangky', 'vido', 'kinhdo', 'sinhvien.lop', 'sinhvien.ho','sinhvien.ten', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->get();
             $trangthai = 0;
-            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew]);
+            $tongsl = $TTNgoaitru->count();
+            return view('pages.admin.QLNgoaiTru',['TTNgoaitru'=>$TTNgoaitru, 'pageSize'=>$pageSize, 'trangthai'=>$trangthai,'phuongxa'=>$arrNew, 'tongsl'=>$tongsl, 'tongsv'=>$tongsv]);
         }  
     }
 

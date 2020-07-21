@@ -190,6 +190,7 @@
             </form>
         </div>
 
+        <div>Tổng số: <?php echo $tongsl; ?> sinh viên</div>
         <div class="row table-responsive mx-auto" style="font-size: 16px">
             <table class="table table-striped">
                 <thead class="thead-dark">

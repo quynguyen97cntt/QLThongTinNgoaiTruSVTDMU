@@ -24,8 +24,9 @@ class QLSinhVien extends Controller
         $pageSize = 15;
         $student = sinhvien::orderBy('lop','asc')->paginate($pageSize);
         $lop = lop::all();
+        $tongsl = sinhvien::all()->count();
 
-        return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop]);
+        return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop, 'tongsl'=>$tongsl]);
     }
 
     public function ThemSV(Request $req){
@@ -90,19 +91,22 @@ class QLSinhVien extends Controller
              $req->session()->get('timkiemtheolop')==='D16PM01' || $req->session()->get('timkiemtheolop')==='D16PM02')
             {
                 $student= sinhvien::where('lop', '=', $req->session()->get('timkiemtheolop'))->paginate($pageSize);
-                return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop]);
+                $tongsl = $student->count();
+                return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop, 'tongsl'=>$tongsl]);
             }
             else
             {
                 $student= sinhvien::where('ten', '=', $req->session()->get('timkiemtheolop'))->paginate($pageSize);
-                return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop]);
+                $tongsl = $student->count();
+                return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop, 'tongsl'=>$tongsl]);
             }    
         }
         else
         {
             session()->put('timkiemtheolop', $search);
             $student= sinhvien::where('mssv', '=', $search)->orWhere('ten', 'LIKE', "%$search%")->orWhere('lop', '=', $search)->paginate($pageSize);
-            return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop]);
+            $tongsl = $student->count();
+            return view('pages.admin.QLThongTinSV',['student'=>$student, 'pageSize'=>$pageSize, 'lop'=>$lop, 'tongsl'=>$tongsl]);
         }
         
     }

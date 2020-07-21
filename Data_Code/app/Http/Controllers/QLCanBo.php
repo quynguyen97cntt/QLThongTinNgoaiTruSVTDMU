@@ -24,8 +24,9 @@ class QLCanBo extends Controller
         $canbo = canbo::orderBy('CTDaoTao','asc')->paginate($pageSize);
         $khoa = khoa::all();
         $ctdaotao = ctdaotao::all();
+        $tongsl = canbo::all()->count();
 
-        return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao]);
+        return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao, 'tongsl'=>$tongsl]);
     }
 
     public function XoaCanBo(Request $req)
@@ -123,13 +124,15 @@ class QLCanBo extends Controller
         $search = $req->get('timkiemcb');
         if($search===null){    
             $canbo = canbo::where('id', '=', $req->session()->get('timkiemcanbo'))->orWhere('hoten', 'LIKE', "%$req->session()->get('timkiemcanbo')%")->orderBy('CTDaoTao','asc')->paginate($pageSize);
-            return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao]);
+            $tongsl = $canbo->count();
+            return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao, 'tongsl'=>$tongsl]);
         }
         else
         {
             session()->put('timkiemcanbo', $search);
             $canbo = canbo::where('id', '=', $search)->orWhere('hoten', 'LIKE', "%$search%")->orderBy('CTDaoTao','asc')->paginate($pageSize);
-            return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao]);
+            $tongsl = $canbo->count();
+            return view('pages.admin.QLThongTinCB',['canbo'=>$canbo, 'pageSize'=>$pageSize, 'khoa'=>$khoa, 'ctdaotao'=>$ctdaotao, 'tongsl'=>$tongsl]);
         }
         
     }
@@ -137,6 +140,7 @@ class QLCanBo extends Controller
     public function TTGiangVien(Request $req){
         return view('pages.user.thongtingiangvien');
     }
+    
     public function TraCuuTTGiangVien(Request $req){
         $search = $req->timkiemcb;
         if($search===null){    

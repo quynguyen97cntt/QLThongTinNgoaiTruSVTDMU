@@ -75,7 +75,264 @@ var truonghoc =L.geoJson({
   var selected = null;
 
 L.control.locate().addTo(map);
+function ShowHideClass() {
+  var lopvung = document.getElementById("lopvung");
+  var lopdiem = document.getElementById("lopdiem");
 
+  if(lopvung.checked == true && lopdiem.checked == true)
+  {
+    $.ajax({
+      url: "./getdatataindex",
+      cache: false,
+      type: "GET",
+      data: {"_token": "{{ csrf_token() }}"},
+      success: function(response) {
+          var s ='';
+          s += '<div class="row justify-content-center ">';
+          s += '<div id="mapid" style="height: 530px;"></div>';
+          s += '</div>';
+          s += '<script>';
+          s += 'var map = L.map("mapid").setView([10.9805, 106.6745], 13);';
+          s += '</script>';
+          s += '<script>';
+          s += 'var geojsonFeature = {';
+          s += '"type": "FeatureCollection",';
+          s += '"features": [';
+          s += response.geojson;
+          s += ']';
+          s += '};';
+          s += '</script>';
+          s += '<script src="./js/geojsondata.js"></script>';
+          s +='<script src="./js/geojson.js"></script>';
+
+          s +='<script>';
+          s +='L.geoJson({';
+          s +='"type": "FeatureCollection",';
+          s +='"features": [';
+          s += response.geojson2;
+          s +=']';
+          s +='}, {';
+          s +='style: function (feature) {';
+          s +='return {';
+          s +='weight: 2,';
+          s +='color: feature.properties.color,';
+          s +='fillColor: feature.properties.fillColor,';
+          s +='fillOpacity: 0.2,';
+          s +='radius: 500,';
+          s +='};';
+          s +='},';
+          s +='onEachFeature: function (feature, layer) {';
+          s +='layer.on({';
+          s +='\'mouseover\': function (e) {';
+          s +='highlight(e.target);';
+          s +='},';
+          s +='\'mouseout\': function (e) {';
+          s +='dehighlight(e.target);';
+          s +='},';
+          s +='\'click\': function (e) {';
+          s +='select(e.target);';
+          s +='}';
+          s +='});';
+          s +='}';
+          s +='}).addTo(map);';
+          s +='</script>';
+          $('#contentchange').html(s);
+      },
+      error: function(request, status, error) {
+          console.log("An error occurred write log: " + error);
+      }
+    });
+  }
+  if(lopvung.checked == false && lopdiem.checked == false)
+  {
+    $.ajax({
+      url: "./getdatataindex",
+      cache: false,
+      type: "GET",
+      data: {"_token": "{{ csrf_token() }}"},
+      success: function(response) {
+          var s ='';
+          s += '<div class="row justify-content-center ">';
+          s += '<div id="mapid" style="height: 530px;"></div>';
+          s += '</div>';
+          s += '<script>';
+          s += 'var map = L.map("mapid").setView([10.9805, 106.6745], 13);';
+          s += '</script>';
+          s += '<script>';
+          s += 'var geojsonFeature = {';
+          s += '"type": "FeatureCollection",';
+          s += '"features": [';
+          s += ']';
+          s += '};';
+          s += '</script>';
+          s += '<script src="./js/geojsondata.js"></script>';
+          s +='<script src="./js/geojson.js"></script>';
+
+          s +='<script>';
+          s +='L.geoJson({';
+          s +='"type": "FeatureCollection",';
+          s +='"features": [';
+          s +=']';
+          s +='}, {';
+          s +='style: function (feature) {';
+          s +='return {';
+          s +='weight: 2,';
+          s +='color: feature.properties.color,';
+          s +='fillColor: feature.properties.fillColor,';
+          s +='fillOpacity: 0.2,';
+          s +='radius: 500,';
+          s +='};';
+          s +='},';
+          s +='onEachFeature: function (feature, layer) {';
+          s +='layer.on({';
+          s +='\'mouseover\': function (e) {';
+          s +='highlight(e.target);';
+          s +='},';
+          s +='\'mouseout\': function (e) {';
+          s +='dehighlight(e.target);';
+          s +='},';
+          s +='\'click\': function (e) {';
+          s +='select(e.target);';
+          s +='}';
+          s +='});';
+          s +='}';
+          s +='}).addTo(map);';
+          s +='</script>';
+          $('#contentchange').html(s);
+      },
+      error: function(request, status, error) {
+          console.log("An error occurred write log: " + error);
+      }
+    });
+  }
+  if(lopvung.checked == true && lopdiem.checked == false)
+  {
+    $.ajax({
+      url: "./getdatataindex",
+      cache: false,
+      type: "GET",
+      data: {"_token": "{{ csrf_token() }}"},
+      success: function(response) {
+          var s ='';
+          s += '<div class="row justify-content-center ">';
+          s += '<div id="mapid" style="height: 530px;"></div>';
+          s += '</div>';
+          s += '<script>';
+          s += 'var map = L.map("mapid").setView([10.9805, 106.6745], 13);';
+          s += '</script>';
+          s += '<script>';
+          s += 'var geojsonFeature = {';
+          s += '"type": "FeatureCollection",';
+          s += '"features": [';
+          s += ']';
+          s += '};';
+          s += '</script>';
+          s += '<script src="./js/geojsondata.js"></script>';
+          s +='<script src="./js/geojson.js"></script>';
+
+          s +='<script>';
+          s +='L.geoJson({';
+          s +='"type": "FeatureCollection",';
+          s +='"features": [';
+          s += response.geojson2;
+          s +=']';
+          s +='}, {';
+          s +='style: function (feature) {';
+          s +='return {';
+          s +='weight: 2,';
+          s +='color: feature.properties.color,';
+          s +='fillColor: feature.properties.fillColor,';
+          s +='fillOpacity: 0.2,';
+          s +='radius: 500,';
+          s +='};';
+          s +='},';
+          s +='onEachFeature: function (feature, layer) {';
+          s +='layer.on({';
+          s +='\'mouseover\': function (e) {';
+          s +='highlight(e.target);';
+          s +='},';
+          s +='\'mouseout\': function (e) {';
+          s +='dehighlight(e.target);';
+          s +='},';
+          s +='\'click\': function (e) {';
+          s +='select(e.target);';
+          s +='}';
+          s +='});';
+          s +='}';
+          s +='}).addTo(map);';
+          s +='</script>';
+          $('#contentchange').html(s);
+      },
+      error: function(request, status, error) {
+          console.log("An error occurred write log: " + error);
+      }
+    });
+  }
+  if(lopvung.checked == false && lopdiem.checked == true)
+  {
+    $.ajax({
+      url: "./getdatataindex",
+      cache: false,
+      type: "GET",
+      data: {"_token": "{{ csrf_token() }}"},
+      success: function(response) {
+          var s ='';
+          s += '<div class="row justify-content-center ">';
+          s += '<div id="mapid" style="height: 530px;"></div>';
+          s += '</div>';
+          s += '<script>';
+          s += 'var map = L.map("mapid").setView([10.9805, 106.6745], 13);';
+          s += '</script>';
+          s += '<script>';
+          s += 'var geojsonFeature = {';
+          s += '"type": "FeatureCollection",';
+          s += '"features": [';
+          s += response.geojson;
+          s += ']';
+          s += '};';
+          s += '</script>';
+          s += '<script src="./js/geojsondata.js"></script>';
+          s +='<script src="./js/geojson.js"></script>';
+
+          s +='<script>';
+          s +='L.geoJson({';
+          s +='"type": "FeatureCollection",';
+          s +='"features": [';
+          s +=']';
+          s +='}, {';
+          s +='style: function (feature) {';
+          s +='return {';
+          s +='weight: 2,';
+          s +='color: feature.properties.color,';
+          s +='fillColor: feature.properties.fillColor,';
+          s +='fillOpacity: 0.2,';
+          s +='radius: 500,';
+          s +='};';
+          s +='},';
+          s +='onEachFeature: function (feature, layer) {';
+          s +='layer.on({';
+          s +='\'mouseover\': function (e) {';
+          s +='highlight(e.target);';
+          s +='},';
+          s +='\'mouseout\': function (e) {';
+          s +='dehighlight(e.target);';
+          s +='},';
+          s +='\'click\': function (e) {';
+          s +='select(e.target);';
+          s +='}';
+          s +='});';
+          s +='}';
+          s +='}).addTo(map);';
+          s +='</script>';
+          $('#contentchange').html(s);
+      },
+      error: function(request, status, error) {
+          console.log("An error occurred write log: " + error);
+      }
+    });
+  }
+
+}
 $(document).ready(function(){
   $("#phuongxa").change(function(){
 
@@ -84,6 +341,8 @@ $(document).ready(function(){
     map.flyTo([arr[0], arr[1]], 15);
     
   });
+
+  
 
   $("#giaphong").change(function(){
     document.getElementById("statusStudentsTC").checked = false;

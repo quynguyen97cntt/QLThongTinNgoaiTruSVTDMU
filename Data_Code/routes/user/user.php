@@ -64,3 +64,5 @@ Route::post('thong-tin-giang-vien', 'QLCanBo@TraCuuTTGiangVien')->name('thong-ti
 
 Route::post('checkLocation','QLkhutro@CheckLocation')->name('checkLocation');
 Route::get('lay-tt-khu-tro','QLNgoaiTru@getTTChutro')->name('lay-tt-khu-tro');
+
+Route::get('getdatataindex','QLkhutro@getDataIndex')->name('getdatataindex');

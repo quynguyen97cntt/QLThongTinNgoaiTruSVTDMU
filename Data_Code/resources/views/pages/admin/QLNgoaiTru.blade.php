@@ -163,7 +163,7 @@
                         </div>
                     </div>
         </form>
-
+        <div>Tổng số: <?php echo $tongsl."/".$tongsv; ?> sinh viên đã cập nhật</div>
         <div id="mapid" class="col-md-12" style="height: 530px;"></div>
 
                             <!-- Modal thông tin -->

@@ -163,6 +163,50 @@ class QLkhutro extends Controller
         }
     }
 
+    public function getDataIndex(Request $req){
+            $output=[];
+            $result=[];
+            $phuongxa = phuong::select(["gid", "tenphuong", "fillColor", "color", "toadodiem", DB::raw("ST_AsGeoJSON(geom) AS geom")])->get();
+            $arrNew =[];
+            $toado = [];
+
+            for($i=0; $i<$phuongxa->count(); $i++)
+            {
+                $output[$i] = $phuongxa[$i]->geom;
+                $result[$i]=$output[$i]["coordinates"][0][0];
+                
+                $toado[$i]= "".json_encode($result[$i])."";
+                $arrNew[$i]["gid"] = $phuongxa[$i]->gid;
+                $arrNew[$i]["tenphuong"] = $phuongxa[$i]->tenphuong;
+                $arrNew[$i]["fillColor"] = $phuongxa[$i]->fillColor;
+                $arrNew[$i]["color"] = $phuongxa[$i]->color;
+                $arrNew[$i]["toadodiem"] = $phuongxa[$i]->toadodiem;
+                $arrNew[$i]["geom"] = $toado[$i];
+            }
+
+            $phuongxa = phuongxa::where('maquanhuyen','=',718)->get();
+            $lon = 106.6744565963745;
+            $lat = 10.980469775348254;
+            $sqlDistance = DB::raw("(3959 * acos( cos( radians($lat) ) 
+            * cos( radians( ST_Y(geom) ) )  
+            * cos( radians( ST_X(geom) ) - radians($lon) ) 
+            + sin( radians($lat) ) 
+            * sin( radians( ST_Y(geom) ) ) ) ) * 1.609344");
+
+            $dsNhatro = DB::table('khunhatro_tdm_point')->select('gid', 'tienich', 'tennhatro', 'khunhatro_tdm_point.ho', 'khunhatro_tdm_point.ten', 'tenchutro', 'khunhatro_tdm_point.sodienthoai', 'giaphong','dien','nuoc', 'soluong', 'trangthai', 'khunhatro_tdm_point.diachi','capnhatlancuoi', DB::raw('ST_X(geom) as x'), DB::raw('ST_Y(geom) as y'))->selectRaw("{$sqlDistance} AS distance")->where('active','=',1)->where('daduyet','=',1)->get();
+            $s = '';
+            $s2 = '';
+            foreach ($dsNhatro as $nhatro )
+            {
+                $s .= '{ "type": "Feature", "properties": { "marker-color": "#ff0000", "marker-size": "medium", "marker-symbol": "", "tennhatro": "'.$nhatro->tennhatro.'", "ten": "'.$nhatro->tenchutro.'", "ngaycapnhat": "'.date('d-m-Y', strtotime($nhatro->capnhatlancuoi)).'","tienich": "'.str_replace("\n","",$nhatro->tienich).'", "giaphong": "'.number_format($nhatro->giaphong).'", "dien": "'.number_format($nhatro->dien).'", "nuoc": "'.number_format($nhatro->nuoc).'", "soluong": "'.$nhatro->soluong.'", "x": "'.$nhatro->x.'", "y": "'.$nhatro->y.'", "trangthai": "'.$nhatro->trangthai.'", "dienthoai": "'.$nhatro->sodienthoai.'", "diachi": "'.$nhatro->diachi.'", "khoangcach": '.round($nhatro->distance,1).'}, "geometry": { "type": "Point", "coordinates": [ '.$nhatro->x.', '.$nhatro->y.' ] } },';
+            }
+            foreach ($arrNew as $px )
+            {
+                $s2 .= '{"type": "Feature", "properties": {"marker-color": "#ff0000", "marker-size": "medium", "marker-symbol": "", "gid": "'.$px['gid'].'", "fillColor": "'.$px['fillColor'].'", "color": "'.$px['color'].'", "tenphuong": "'.$px['tenphuong'].'" }, "geometry": { "type": "Polygon", "coordinates": [ '.$px['geom'].' ] } },';
+            }
+            return response()->json(['dsNhatro' => $dsNhatro, 'phuongxa' => $phuongxa, 'phuongxaload' => $arrNew, 'geojson' => $s, 'geojson2' => $s2], 200);
+    }
+
     public function TrangChinh(Request $req){
         if($req->session()->get('tenadmin'))
         {

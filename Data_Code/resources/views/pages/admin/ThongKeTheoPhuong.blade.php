@@ -78,5 +78,6 @@
                 </tbody>  
             </table>
     </div>
+    <div class="ml-5 mb-2"><h6>Ngày thống kê: <?php date_default_timezone_set('Asia/Ho_Chi_Minh'); echo date("d-m-Y"); ?></h6></div>
 </div>
 @endsection
