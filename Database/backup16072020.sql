@@ -622,47 +622,7 @@ COPY public.baiviet (id, tieude, noidung, ngaytao, makhutro, trangthaiduyet, gia
 --
 
 COPY public.canbo (ho, ten, hoten, ngaysinh, gioitinh, cmnd, sodienthoai, email, "CTDaoTao", id, diachi, "idKhoa") FROM stdin;
-\N	\N	Ngô Hồng Minh	\N	Nữ	\N	0909.533.803	minhnh@tdmu.edu.vn	Hệ thống thông tin	CNTT023	\N	KTCN
-\N	\N	Ngô Thị Ngọc Dịu	\N	Nữ	\N	0794.849.886	diuntn@tdmu.edu.vn	Hệ thống thông tin	TDMU046	\N	KTCN
-\N	\N	Huỳnh Minh Phú	\N	Nam	\N	0986.977.330	phuhm@tdmu.edu.vn	Kỹ thuật cơ điện tử	CNOT002	\N	KTCN
-\N	\N	Đoàn Xuân Toàn	\N	Nam	\N	0888.237.138	toandx@tdmu.edu.vn	Kỹ thuật ĐK và TĐH	KDDT013	\N	KTCN
-\N	\N	Đinh Hải Lâm	\N	Nam	\N	0976.782.993	lamdh@tdmu.edu.vn	Kỹ thuật ô tô	TDMU193	\N	KTCN
-\N	\N	Dương Thị Kim Chi	\N	Nữ	\N	0918.938.064	chidtk@tdmu.edu.vn	Hệ thống thông tin	CNTT043	\N	KTCN
-\N	\N	Cao Thanh Xuân	\N	Nam	\N	0936.009.108	xuanct@tdmu.edu.vn	Hệ thống thông tin	CNTT009	\N	KTCN
-\N	\N	Trần Bá Minh Sơn	\N	Nam	\N	0918.309.379	sontbm@tdmu.edu.vn	Hệ thống thông tin	CNTT020	\N	KTCN
-\N	\N	Võ Thị Diễm Hương	\N	Nữ	\N	0938.481.785	huongvtd@tdmu.edu.vn	Hệ thống thông tin	CNTT026	\N	KTCN
-\N	\N	Nguyễn Thế Bảo	\N	Nam	\N	0937.068.474	baont@tdmu.edu.vn	Hệ thống thông tin	CNTT030	\N	KTCN
-\N	\N	Nguyễn Kim Duy	\N	Nam	\N	0936.524.082	duynk@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT105	\N	KTCN
-\N	\N	Nguyễn Ngọc Thận	\N	Nam	\N	0941.939.448	thannn@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT015	\N	KTCN
-\N	\N	Vũ Văn Nam	\N	Nam	\N	0912.279.166	namvv@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT034	\N	KTCN
-\N	\N	Nguyễn Đình Thọ	\N	Nam	\N	0378.868.285	thond@tdmu.edu.vn	Kỹ thuật phần mềm	TDMU030	\N	KTCN
-\N	\N	Trần Văn Thành	\N	Nam	\N	0908.667.552	thanhtv@tdmu.edu.vn	Kỹ thuật điện	KDDT033	\N	KTCN
-\N	\N	Nguyễn Anh Vũ	\N	Nam	\N	0901.674.482	vuna@tdmu.edu.vn	Kỹ thuật điện	KDDT008	\N	KTCN
-\N	\N	Hồ Văn Lý	\N	Nam	\N	0907.043.711	lyhv@tdmu.edu.vn	Kỹ thuật điện	KDDT017	\N	KTCN
-\N	\N	Hà Văn Du	\N	Nam	\N	0918.658.503	duhv@tdmu.edu.vn	Kỹ thuật điện	KDDT009	\N	KTCN
-\N	\N	Nguyễn Thành Đoàn	\N	Nam	\N	0908.945.001	doannt@tdmu.edu.vn	Kỹ thuật điện	KDDT004	\N	KTCN
-\N	\N	Nguyễn Bá Thành	\N	Nam	\N	0934.001.305	thanhnb@tdmu.edu.vn	Kỹ thuật điện	KDDT006	\N	KTCN
-\N	\N	Trần Hoàng Linh	\N	Nam	\N	0945.303.030	linhth@tdmu.edu.vn	Kỹ thuật điện	CNTT059	\N	KTCN
-\N	\N	Phạm Hồng Thanh	\N	Nam	\N	0908.775.771	thanhph@tdmu.edu.vn	Kỹ thuật điện	TDMU020	\N	KTCN
-\N	\N	Văn Hoàng Phương	\N	Nam	\N	0937.884.112	phuongvh@tdmu.edu.vn	Kỹ thuật điện	KDDT030	\N	KTCN
-\N	\N	Hoàng Mạnh Hà	\N	Nam	\N	0989.127.583	hahm@tdmu.edu.vn	\N	CB07	\N	KTCN
-\N	\N	Nguyễn Xuân Dũng	\N	Nam	\N	0913.791.612	nxdung2014@gmail.com	\N	CB08	\N	KTCN
-\N	\N	Võ Thị Hồng Thắm	\N	Nữ	\N	0983.711.737	vothihongtham@gmail.com	\N	CB09	\N	KTCN
-\N	\N	Nguyễn Thị Ánh Tuyết	\N	Nữ	\N	0938.008.264	ntatuyet175@gmail.com	\N	CB10	\N	KTCN
-\N	\N	Lê Tuấn Anh	\N	Nam	\N	0918.227.228	letuanh@tdmu.edu.vn	Hệ thống thông tin	CB01	\N	KTCN
 \N	\N	Bùi Thanh Hùng	\N	Nam	\N	0908.542.521	tuhungphe@gmail.com	Hệ thống thông tin	CB02	\N	KTCN
-\N	\N	Nguyễn Thị Thuỷ	\N	Nữ	\N	0388.906.377	ntthuysp@gmail.com	Hệ thống thông tin	CB03	\N	KTCN
-\N	\N	Đặng Phạm Hữu Thảo	\N	Nam	\N	0909.688.615	dphthao@gmail.com	Hệ thống thông tin	CB04	\N	KTCN
-\N	\N	Nguyễn Tấn Lộc	\N	Nam	\N	0914.290.456	locnt@tdmu.edu.vn	\N	CB05	\N	KTCN
-\N	\N	Bùi Thanh Khiết	\N	Nam	\N	0934.003.777	tatcat7020@gmail.com	\N	CB06	\N	KTCN
-\N	\N	Huỳnh Nguyễn Thành Luân	\N	Nam	\N	0988.233.681	luanhnt@tdmu.edu.vn	\N	CB11	\N	KTCN
-\N	\N	Hồ Nhật Tiến	\N	Nam	\N	0945.533.855	honhattien@gmail.com	\N	CB12	\N	KTCN
-\N	\N	Trần Văn Hữu	\N	Nam	\N	0913.131.732	huutv@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT045	\N	KTCN
-\N	\N	Võ Quốc Lương	\N	Nam	\N	0988.936.592	luongvq@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT032	\N	KTCN
-\N	\N	Nguyễn Hải Vĩnh Cường	\N	Nam	\N	0819.290.629	cuongnhv@tdmu.edu.vn	Kỹ thuật phần mềm	KTPM001	\N	KTCN
-\N	\N	Trần Cẩm Tú	\N	Nữ	\N	0978.784.994	tutc@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT002	\N	KTCN
-\N	\N	Nguyễn Hữu Vĩnh	\N	Nam	\N	0908.202.983	vinhnh@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT041	\N	KTCN
-\N	\N	Hồ Đắc Hưng	\N	Nam	\N	0938.968.694	hunghd@tdmu.edu.vn	Kỹ thuật phần mềm	CNTT056	\N	KTCN
 \.
 
 
