@@ -1862,7 +1862,7 @@ COPY public.sinhvien (mssv, ho, ten, ngaysinh, gioitinh, dienthoai, email, lop, 
 1624801030119	NGUYỄN MINH	VƯƠNG	1998-11-27	Nam	\N	0	D16PM02	2811086424	\N	\N	\N	NGUYỄN MINH VƯƠNG
 1624801030125	NGUYỄN VĨNH	TOÀN	1998-02-06	Nam	1676696642	tn819936@gmail.com	D16PM02	2811086430	\N	\N	\N	NGUYỄN VĨNH TOÀN
 1624801040070	HỒ NGUYỄN QUỐC	VINH	1998-07-17	Nam	01235134243	hnqv1998bd@gmail.com	D16HT01	281108729	80 kp2, đường Lê Chí Dân, P. Hiệp An, Bình Dương	\N	\N	HỒ NGUYỄN QUỐC VINH
-1624801040046	NGUYỄN NGỌC	QUÝ	1997-04-14	Nam	0333839298	quynguyen97cntt@gmail.com	D16HT01	281108688	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	47/1 khu 4, phường Tân An, TP. Thủ Dầu Một, Bình Dương	Bình Dương	NGUYỄN NGỌC QUÝ
+1624801040046	NGUYỄN NGỌC	QUÝ	1997-06-15	Nam	0333839298	quynguyen97cntt@gmail.com	D16HT01	281108600	phường Tân An, TP. Thủ Dầu Một, Bình Dương	phường Tân An, TP. Thủ Dầu Một, Bình Dương	Bình Dương	NGUYỄN NGỌC QUÝ
 1624801040051	HUỲNH THANH	TÂM	1998-09-28	Nam	0923727741	thanhtam28ss@gmail.com	D16HT01	281108712	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	8/14 KP.Bình Phước B, P.Bình Chuẩn, TX.Thuận An, Bình Dương	\N	HUỲNH THANH TÂM
 1624801040059	ĐOÀN TRUNG	THÀNH	1998-07-06	Nam	01654510246	thanhmoc115@gmail.com	D16HT01	281108715	\N	\N	\N	ĐOÀN TRUNG THÀNH
 1624801040060	NGUYỄN TẤN	THÀNH	1998-07-14	Nam	0937519106	tanthanhphuochoa@gmail.com	D16HT01	281108716	542/7, tổ 2, ấp 1B, xã Phước Hòa, huyện Phú Giáo, tỉnh Bình Dương	\N	\N	NGUYỄN TẤN THÀNH
